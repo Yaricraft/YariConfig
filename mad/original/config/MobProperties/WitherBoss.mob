@@ -1,0 +1,8 @@
+stats: {
+name: Kehaan,
+modifier: generic.attackDamage: 0.4~0.6:0,
+modifier: generic.maxHealth:    0.4~0.8:1,
+
+},
+drops: {
+}

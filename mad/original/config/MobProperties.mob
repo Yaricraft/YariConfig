@@ -1,0 +1,6 @@
+/* The default properties to write to auto-generated mob properties files.
+ * Comments (such as this one) will not be copied to generated files.
+*/stats: {
+},
+drops: {
+}

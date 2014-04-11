@@ -1,0 +1,8 @@
+stats: {
+
+modifier: generic.attackDamage: 1.0~2.0:0,
+modifier: generic.maxHealth:    0.5~2.0:1,
+
+},
+drops: {
+}
