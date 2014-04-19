@@ -1,0 +1,38 @@
+--- ../original/config/Thaumcraft.cfg
++++ ../server/config/Thaumcraft.cfg
+@@ -131,7 +131,7 @@
+     B:hard_mode_nodes=true
+ 
+     # How rare nodes are in the world. The number means there will be (on average) one node per N chunks.
+-    I:node_rarity=36
++    I:node_rarity=24
+ 
+     # Determines how fast notifications scroll downards.
+     I:notification_delay=5000
+@@ -143,7 +143,7 @@
+     S:portablehole_blacklist=71
+ 
+     # The chance of a node being special (pure, dark, unstable, etc.). The number means roughly 1 in N nodes will be special, so setting the number to 5 will mean 1 in 5 nodes may be special.
+-    I:special_node_rarity=18
++    I:special_node_rarity=8
+ 
+     # Set to true to have the wand dial display in the bottom left instead of the top left.
+     B:wand_dial_bottom=false
+@@ -259,7 +259,7 @@
+     I:aspect_total_cap=64
+ 
+     # 0 = normal, -1 = easy (all research items are directly purchased with RP), 1 = Hard (all research items need to be solved via the research table)
+-    I:research_difficulty=-1
++    I:research_difficulty=0
+ }
+ 
+ 
+@@ -286,7 +286,7 @@
+     B:biome_taint_from_flux=true
+ 
+     # The chance per block update (1 in n) of the Taint biome spreading. Setting it to 0 prevents the spread of Taint biomes.
+-    I:biome_taint_spread=0
++    I:biome_taint_spread=200
+ }
+ 
+ 

@@ -1,0 +1,45 @@
+--- ../original/config/AppliedEnergistics.cfg
++++ ../server/config/AppliedEnergistics.cfg
+@@ -48,7 +48,7 @@
+     ####################
+ 
+     vesionchecker {
+-        S:lastStarted=hrm5ol9j
++        S:lastStarted=hu6to5b3
+     }
+ 
+ }
+@@ -202,27 +202,27 @@
+     ####################
+ 
+     options {
+-        I:automationMinTickRate=5
++        I:automationMinTickRate=60
+         D:base.wireless.range=32.0
+-        I:craftingMinTickRate=0
++        I:craftingMinTickRate=50
+         S:defaultUnits=AE
+         B:enableShiftInCondenser=false
+         I:max.wireless.extenderBonus=2
+         I:max.wireless.extenders=16
+-        D:perTickNetworkBridge=200.0
++        D:perTickNetworkBridge=2000.0
+         D:powerUsageMultiplier=1.0
+         D:powerWirelessDistanceMultiplier=10.0
+         B:requirePower=true
+         B:sharePowerLPRS485=true
+-        I:storageBusMinTickRate=5
++        I:storageBusMinTickRate=50
+         S:terminalAutoSearch=Autosearch
+         B:terminalSearchToolTips=true
+         S:terminalSortBy=Name
+         S:terminalSortDirection=ASC
+-        I:terminalUpdateMinTickRate=0
++        I:terminalUpdateMinTickRate=50
+         B:terminalUseLargeFont=false
+         S:terminalViewItems=ALL
+-        I:updateMinTickRate=12
++        I:updateMinTickRate=120
+     }
+ 
+     ####################

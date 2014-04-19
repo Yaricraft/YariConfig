@@ -1,0 +1,3004 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/ArcticMobs.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/ArcticMobs.cfg
+@@ -30,7 +30,7 @@
+         ####################
+ 
+         taiga {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -41,7 +41,7 @@
+         ####################
+ 
+         "ice mountains" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -52,7 +52,7 @@
+         ####################
+ 
+         arctic {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -63,7 +63,7 @@
+         ####################
+ 
+         frozenriver {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -74,7 +74,7 @@
+         ####################
+ 
+         "snowy coniferous forest" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -85,7 +85,7 @@
+         ####################
+ 
+         "icy hills" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -96,73 +96,84 @@
+         ####################
+ 
+         "alps mountainside" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+         ####################
++        # snowy beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy beach" {
++            S:ArcticMobs.Frostweaver=10-4-1-2
++            S:ArcticMobs.Reiver=8-4-1-3
++        }
++
++        ####################
++        # frozenocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenocean {
++            S:ArcticMobs.Frostweaver=10-4-1-2
++            S:ArcticMobs.Reiver=8-4-1-3
++        }
++
++        ####################
+         # alps forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+         ####################
+ 
+         "alps forest" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+         ####################
+-        # frozenocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenocean {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++        # tundra
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tundra {
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+         ####################
+-        # tundra
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tundra {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++        # snowy dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy dead forest" {
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+         ####################
+-        # snowy dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy dead forest" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++        # ice plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice plains" {
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+         ####################
+-        # ice plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice plains" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
+-            S:ArcticMobs.Reiver=8-4-1-3
+-        }
+-
+-        ####################
+         # frost forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+         ####################
+ 
+         "frost forest" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -178,7 +189,18 @@
+             ####################
+ 
+             taigahills {
+-                S:ArcticMobs.Frostweaver=6-4-1-2
++                S:ArcticMobs.Frostweaver=10-4-1-2
++                S:ArcticMobs.Reiver=8-4-1-3
++            }
++
++            ####################
++            # tundra
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            tundra {
++                S:ArcticMobs.Frostweaver=10-4-1-2
+                 S:ArcticMobs.Reiver=8-4-1-3
+             }
+ 
+@@ -189,19 +211,41 @@
+             ####################
+ 
+             taiga {
+-                S:ArcticMobs.Frostweaver=6-4-1-2
++                S:ArcticMobs.Frostweaver=10-4-1-2
+                 S:ArcticMobs.Reiver=8-4-1-3
+             }
+ 
+             ####################
+-            # glacier
++            # volcano
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+             ####################
+ 
+-            glacier {
+-                S:ArcticMobs.Frostweaver=6-4-1-2
+-                S:ArcticMobs.Reiver=8-4-1-3
++            volcano {
++                S:ArcticMobs.Frostweaver=0-4-0-4
++                S:ArcticMobs.Reiver=0-4-0-4
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
++                S:ArcticMobs.Frostweaver=0-4-0-4
++                S:ArcticMobs.Reiver=0-4-0-4
++            }
++
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:ArcticMobs.Frostweaver=0-4-0-4
++                S:ArcticMobs.Reiver=0-4-0-4
+             }
+ 
+             ####################
+@@ -249,6 +293,17 @@
+             }
+ 
+             ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:ArcticMobs.Frostweaver=0-4-0-4
++                S:ArcticMobs.Reiver=0-4-0-4
++            }
++
++            ####################
+             # jungle
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -260,6 +315,17 @@
+             }
+ 
+             ####################
++            # woodland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            woodland {
++                S:ArcticMobs.Frostweaver=0-4-0-4
++                S:ArcticMobs.Reiver=0-4-0-4
++            }
++
++            ####################
+             # junglehills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -301,7 +367,7 @@
+         ####################
+ 
+         polar {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -312,18 +378,29 @@
+         ####################
+ 
+         alps {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+         ####################
++        # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        glacier {
++            S:ArcticMobs.Frostweaver=10-4-1-2
++            S:ArcticMobs.Reiver=8-4-1-3
++        }
++
++        ####################
+         # taigahills
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+         ####################
+ 
+         taigahills {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
++            S:ArcticMobs.Frostweaver=10-4-1-2
+             S:ArcticMobs.Reiver=8-4-1-3
+         }
+ 
+@@ -383,1308 +460,10 @@
+         }
+ 
+         ####################
+-        # lush swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush swamp" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # shore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shore {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grove {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # hot springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "hot springs" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # highland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        highland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "desert oil field" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomislandshore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomislandshore {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # storage cell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "storage cell" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        beach {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # mangrove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mangrove {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # moomoofarm
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moomoofarm {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # brushland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        brushland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coniferous forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # oceanic abyss
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "oceanic abyss" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # bloody heap
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bloody heap" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # crag
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        crag {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # deciduous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "deciduous forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "mystic grove" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # deadlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deadlands {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shrubland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "meadow forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # bayou
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bayou {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # silkglades
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        silkglades {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # corrupted sands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "corrupted sands" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # nether
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        nether {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tropics {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # river
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        river {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # heathland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        heathland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # spruce woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "spruce woods" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        plains {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # garden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        garden {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # maple woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "maple woods" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # fen
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        fen {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal spruce forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal spruce forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # junglehills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        junglehills {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ominous woods" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # boreal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "boreal forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # wonderous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "wonderous woods" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        desert {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # orchard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        orchard {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        canyon {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # quagmire
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        quagmire {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # undergarden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        undergarden {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        meadow {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # cherry blossom grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "cherry blossom grove" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # pasture meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "pasture meadow" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # marsh
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        marsh {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropics mountain" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # origin valley
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "origin valley" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # wetland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wetland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # chaparral
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        chaparral {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # temperate rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "temperate rainforest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        savanna {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick shrubland" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ocean oil field" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead swamp" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush desert" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        rainforest {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # grassland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grassland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # redwood forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "redwood forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # foresthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        foresthills {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        forest {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        timber {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # majestic meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "majestic meadow" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # shield
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shield {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # prairie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        prairie {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # coral reef
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coral reef" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # sludgepit
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sludgepit {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # wasteland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wasteland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # witchwoodforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        witchwoodforest {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # gravel beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "gravel beach" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        field {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # lavender fields
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lavender fields" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # thicket
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        thicket {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # jungle
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        jungle {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # outback
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        outback {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills edge
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills edge" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna plateau
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "savanna plateau" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # sky
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sky {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # scrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        scrubland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned timber" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # deserthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deserthills {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown beach" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # birch forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "birch forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # mesa
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mesa {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # boneyard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        boneyard {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # bog
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bog {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # phantasmagoric inferno
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "phantasmagoric inferno" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # sublime shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sublime shrubland" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # swampland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        swampland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # woodland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        woodland {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # moor
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moor {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown greens
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown greens" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        ocean {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # blessed bog
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "blessed bog" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned mystic grove" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # kelp forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "kelp forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # jade cliffs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "jade cliffs" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # bamboo forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bamboo forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned pasture" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # hell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        hell {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # forested field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "forested field" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # oasis
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        oasis {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # badlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        badlands {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        steppe {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # autumn hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "autumn hills" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # volcano
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        volcano {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # dunes
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        dunes {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropical rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropical rainforest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon ravine
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "canyon ravine" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mountain {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # eerie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        eerie {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # tainted land
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tainted land" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+-        # magical forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "magical forest" {
+-            S:ArcticMobs.Frostweaver=0-4-0-4
+-            S:ArcticMobs.Reiver=0-4-0-4
+-        }
+-
+-        ####################
+         # ttftcuts
+         ####################
+ 
+         ttftcuts {
+-            ####################
+-            # tundra
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            tundra {
+-                S:ArcticMobs.Frostweaver=6-4-1-2
+-                S:ArcticMobs.Reiver=8-4-1-3
+-            }
+-
+             ####################
+             # gravel beach
+             #===================
+@@ -1696,61 +475,50 @@
+                 S:ArcticMobs.Reiver=0-4-0-4
+             }
+ 
+-            ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:ArcticMobs.Frostweaver=0-4-0-4
+-                S:ArcticMobs.Reiver=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:ArcticMobs.Frostweaver=0-4-0-4
+-                S:ArcticMobs.Reiver=0-4-0-4
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:ArcticMobs.Frostweaver=0-4-0-4
+-                S:ArcticMobs.Reiver=0-4-0-4
+-            }
+-
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:ArcticMobs.Frostweaver=0-4-0-4
+-                S:ArcticMobs.Reiver=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # snowy beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy beach" {
+-            S:ArcticMobs.Frostweaver=6-4-1-2
+-            S:ArcticMobs.Reiver=8-4-1-3
++        }
++
++        ####################
++        # lush swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush swamp" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # shore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shore {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grove {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # hot springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "hot springs" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
+         }
+ 
+         ####################
+@@ -1765,21 +533,300 @@
+         }
+ 
+         ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:ArcticMobs.Frostweaver=0-4-0-4
+-                S:ArcticMobs.Reiver=0-4-0-4
+-            }
+-
++        # highland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        highland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # mushroomislandshore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomislandshore {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # desert oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "desert oil field" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # storage cell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "storage cell" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        beach {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # mangrove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mangrove {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # eerie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        eerie {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # moomoofarm
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moomoofarm {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # brushland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        brushland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coniferous forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # oceanic abyss
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "oceanic abyss" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # crag
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        crag {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # bloody heap
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bloody heap" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # deciduous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "deciduous forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "mystic grove" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # deadlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deadlands {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shrubland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # meadow forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "meadow forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # bayou
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bayou {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # silkglades
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        silkglades {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # corrupted sands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "corrupted sands" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # nether
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        nether {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # tropics
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tropics {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # river
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        river {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # heathland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        heathland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # spruce woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "spruce woods" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
+         }
+ 
+         ####################
+@@ -1793,6 +840,952 @@
+             S:ArcticMobs.Reiver=0-4-0-4
+         }
+ 
++        ####################
++        # plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        plains {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # garden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        garden {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # maple woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "maple woods" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # fen
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        fen {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # seasonal spruce forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal spruce forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # junglehills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        junglehills {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ominous woods" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # boreal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "boreal forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # wonderous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "wonderous woods" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        desert {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # orchard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        orchard {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # canyon
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        canyon {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # quagmire
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        quagmire {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # undergarden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        undergarden {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        meadow {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # cherry blossom grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "cherry blossom grove" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # pasture meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "pasture meadow" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # marsh
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        marsh {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # tropics mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropics mountain" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # origin valley
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "origin valley" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # wetland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wetland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # chaparral
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        chaparral {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # savanna
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        savanna {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # temperate rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "temperate rainforest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # thick shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick shrubland" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # ocean oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ocean oil field" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # dead swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead swamp" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # lush desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush desert" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        rainforest {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # grassland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grassland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # redwood forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "redwood forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # foresthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        foresthills {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        forest {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # majestic meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "majestic meadow" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        timber {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # shield
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shield {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # prairie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        prairie {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # coral reef
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coral reef" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # wasteland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wasteland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # sludgepit
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sludgepit {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # witchwoodforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        witchwoodforest {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        field {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # gravel beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "gravel beach" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # extreme hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # lavender fields
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lavender fields" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # thicket
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        thicket {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # jungle
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        jungle {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # outback
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        outback {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # savanna plateau
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "savanna plateau" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # extreme hills edge
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills edge" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # sky
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sky {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # scrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        scrubland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # thinned timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned timber" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # deserthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deserthills {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # overgrown beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown beach" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # birch forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "birch forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # boneyard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        boneyard {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # mesa
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mesa {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # bog
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bog {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # sublime shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sublime shrubland" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # swampland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        swampland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # phantasmagoric inferno
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "phantasmagoric inferno" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # woodland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        woodland {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # moor
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moor {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # overgrown greens
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown greens" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # ocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        ocean {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # blessed bog
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "blessed bog" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # thinned mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned mystic grove" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # kelp forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "kelp forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # jade cliffs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "jade cliffs" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # thinned pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned pasture" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # bamboo forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bamboo forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # hell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        hell {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # forested field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "forested field" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # oasis
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        oasis {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # badlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        badlands {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # tainted land
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tainted land" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        steppe {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # autumn hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "autumn hills" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # magical forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "magical forest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # volcano
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        volcano {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # dunes
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        dunes {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # tropical rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropical rainforest" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # canyon ravine
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "canyon ravine" {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
++        ####################
++        # mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mountain {
++            S:ArcticMobs.Frostweaver=0-4-0-4
++            S:ArcticMobs.Reiver=0-4-0-4
++        }
++
+     }
+ 
+ }

@@ -1,0 +1,1 @@
+<bottomleft>&fDay <day> (<daytime[&e/&8]><mctime[12]>&f)

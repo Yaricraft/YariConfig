@@ -1,0 +1,66 @@
+--- ../original/config/BattleTowers.cfg
++++ ../server/config/BattleTowers.cfg
+@@ -26,12 +26,63 @@
+ ####################
+ 
+ biomespawnallowed {
++    B:"Alps Mountainside"=true
+     B:"Autumn Hills"=true
++    B:Bayou=true
+     B:Beach=true
++    B:"Birch Forest"=true
++    B:"Blessed Bog"=true
++    B:"Bloody Heap"=true
++    B:Boneyard=true
++    B:"Boreal Forest"=true
++    B:"Coniferous Forest"=true
++    B:"Corrupted Sands"=true
++    B:"Deciduous Forest"=true
++    B:Eerie=true
++    B:Forest=true
++    B:Garden=true
++    B:Grassland=true
++    B:Heathland=true
++    B:"Ice Plains"=true
++    B:"Kelp Forest"=true
++    B:"Lush Desert"=true
++    B:"Lush Swamp"=true
++    B:"Majestic Meadow"=true
++    B:"Maple Woods"=true
++    B:Marsh=true
+     B:Mesa=true
++    B:Mountain=true
++    B:MushroomIsland=true
++    B:MushroomIslandShore=true
++    B:Nether=true
+     B:Ocean=true
++    B:"Ocean Oil Field"=true
++    B:"Oceanic Abyss"=true
++    B:"Pasture Meadow"=true
++    B:"Phantasmagoric Inferno"=true
++    B:Plains=true
++    B:Quagmire=true
++    B:Rainforest=true
+     B:River=true
++    B:Savanna=true
++    B:"Seasonal Forest"=true
++    B:"Seasonal Spruce Forest"=true
++    B:Shrubland=true
++    B:Sky=true
++    B:"Snowy Coniferous Forest"=true
++    B:Steppe=true
++    B:"Sublime Shrubland"=true
++    B:Swampland=true
++    B:"Thick Shrubland"=true
++    B:Thicket=true
++    B:"Tropical Rainforest"=true
++    B:"Tropical Shrubland"=true
++    B:Tropics=true
+     B:Tundra=true
++    B:Undergarden=true
++    B:Wetland=true
++    B:"Wonderous Woods"=true
++    B:Woodland=true
+ }
+ 
+ 

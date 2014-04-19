@@ -1,0 +1,9 @@
+stats: {
+modifier: generic.attackDamage: 0.8~1.2:0,
+modifier: generic.maxHealth:    0.2~0.4:1,
+modifier: generic.movementSpeed: 0.1~0.2:1,
+  choose:0.05: {
+        1: name: ScumbagSkeleton
+  }
+},
+drops: {}

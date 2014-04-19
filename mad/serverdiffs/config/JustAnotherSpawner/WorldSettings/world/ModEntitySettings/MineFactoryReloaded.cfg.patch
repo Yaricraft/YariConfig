@@ -1,0 +1,3026 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/MineFactoryReloaded.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/MineFactoryReloaded.cfg
+@@ -43,14 +43,6 @@
+         }
+ 
+         ####################
+-        # twilight swamp
+-        ####################
+-
+-        "twilight swamp" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+         # ice mountains
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -61,14 +53,6 @@
+         }
+ 
+         ####################
+-        # dark forest
+-        ####################
+-
+-        "dark forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+         # pasture
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -89,98 +73,40 @@
+         }
+ 
+         ####################
+-        # seasonal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # sacred springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sacred springs" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush swamp" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # shore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shore {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # arctic
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        arctic {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grove {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # hot springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "hot springs" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight stream
+-        ####################
+-
+-        "twilight stream" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # highland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        highland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+         # biomesoplenty
+         ####################
+ 
+         biomesoplenty {
++            ####################
++            # volcano
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            volcano {
++                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
++                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++            }
++
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++            }
++
+             ####################
+             # swampland
+             #===================
+@@ -222,6 +148,16 @@
+             }
+ 
+             ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++            }
++
++            ####################
+             # jungle
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -232,6 +168,16 @@
+             }
+ 
+             ####################
++            # woodland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            woodland {
++                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++            }
++
++            ####################
+             # junglehills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -262,6 +208,16 @@
+             }
+ 
+             ####################
++            # tundra
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            tundra {
++                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++            }
++
++            ####################
+             # foresthills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -281,1385 +237,25 @@
+                 S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+             }
+ 
+-            ####################
+-            # glacier
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            glacier {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # frozenriver
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenriver {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "desert oil field" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomislandshore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomislandshore {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy coniferous forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # storage cell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "storage cell" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # icy hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "icy hills" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        beach {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mangrove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mangrove {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # eerie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        eerie {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # moomoofarm
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moomoofarm {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # brushland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        brushland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coniferous forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # oceanic abyss
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "oceanic abyss" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # crag
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        crag {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # bloody heap
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bloody heap" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # deciduous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "deciduous forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "mystic grove" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # deadlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deadlands {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shrubland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "meadow forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # bayou
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bayou {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # silkglades
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        silkglades {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # corrupted sands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "corrupted sands" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # nether
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        nether {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tropics {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # river
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        river {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # lake border
+-        ####################
+-
+-        "lake border" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # heathland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        heathland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # spruce woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "spruce woods" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # clearing border
+-        ####################
+-
+-        "clearing border" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        plains {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # garden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        garden {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # maple woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "maple woods" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # fen
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        fen {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal spruce forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal spruce forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # junglehills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        junglehills {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ominous woods" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps mountainside
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps mountainside" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # boreal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "boreal forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # wonderous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "wonderous woods" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        desert {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # orchard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        orchard {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # fire swamp
+-        ####################
+-
+-        "fire swamp" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        canyon {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # quagmire
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        quagmire {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # undergarden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        undergarden {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        meadow {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenocean {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # cherry blossom grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "cherry blossom grove" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # pasture meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "pasture meadow" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # marsh
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        marsh {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # minor feature
+-        ####################
+-
+-        "minor feature" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropics mountain" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # origin valley
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "origin valley" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # lots of mushrooms
+-        ####################
+-
+-        "lots of mushrooms" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # tundra
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tundra {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # wetland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wetland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # major feature
+-        ####################
+-
+-        "major feature" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # chaparral
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        chaparral {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        savanna {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # temperate rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "temperate rainforest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # dense twilight forest
+-        ####################
+-
+-        "dense twilight forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick shrubland" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ocean oil field" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy dead forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead swamp" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # ice plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice plains" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush desert" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        rainforest {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # grassland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grassland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # foresthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        foresthills {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # redwood forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "redwood forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        forest {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # majestic meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "majestic meadow" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        timber {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # shield
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shield {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # prairie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        prairie {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # frost forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "frost forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # coral reef
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coral reef" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # wasteland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wasteland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # sludgepit
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sludgepit {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # witchwoodforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        witchwoodforest {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # polar
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        polar {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        field {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # gravel beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "gravel beach" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy forest
+-        ####################
+-
+-        "snowy forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # lavender fields
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lavender fields" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        alps {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # thicket
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        thicket {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # jungle
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        jungle {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # outback
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        outback {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna plateau
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "savanna plateau" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills edge
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills edge" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # sky
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sky {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # enchanted forest
+-        ####################
+-
+-        "enchanted forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # scrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        scrubland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned timber" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # deserthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deserthills {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown beach" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # birch forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "birch forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # boneyard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        boneyard {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mesa
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mesa {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # bog
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bog {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # sublime shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sublime shrubland" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # swampland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        swampland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # phantasmagoric inferno
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "phantasmagoric inferno" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight forest
+-        ####################
+-
+-        "twilight forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # woodland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        woodland {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # glacier
+-        ####################
+-
+-        glacier {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # moor
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moor {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown greens
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown greens" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        ocean {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # blessed bog
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "blessed bog" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned mystic grove" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # taigahills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        taigahills {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # kelp forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "kelp forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # jade cliffs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "jade cliffs" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushrooms
+-        ####################
+-
+-        mushrooms {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned pasture" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # bamboo forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bamboo forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight lake
+-        ####################
+-
+-        "twilight lake" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # hell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        hell {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # forested field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "forested field" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # oasis
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        oasis {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # highlands
+-        ####################
+-
+-        highlands {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # badlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        badlands {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight clearing
+-        ####################
+-
+-        "twilight clearing" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # tainted land
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tainted land" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        steppe {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # autumn hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "autumn hills" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # magical forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "magical forest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # volcano
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        volcano {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # dunes
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        dunes {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropical rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropical rainforest" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon ravine
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "canyon ravine" {
+-            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-        }
+-
+-        ####################
+-        # mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mountain {
++        }
++
++        ####################
++        # seasonal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # sacred springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sacred springs" {
+             S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+         }
+ 
+@@ -1678,56 +274,56 @@
+                 S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+             }
+ 
+-            ####################
+-            # tundra
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            tundra {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
+-            ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
++        }
++
++        ####################
++        # lush swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush swamp" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # shore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shore {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # arctic
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        arctic {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grove {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # hot springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "hot springs" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+         }
+ 
+         ####################
+@@ -1741,20 +337,303 @@
+         }
+ 
+         ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+-            }
+-
++        # highland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        highland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # frozenriver
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenriver {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # mushroomislandshore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomislandshore {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # desert oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "desert oil field" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # snowy coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy coniferous forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # storage cell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "storage cell" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # icy hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "icy hills" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        beach {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # mangrove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mangrove {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # eerie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        eerie {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # moomoofarm
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moomoofarm {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # brushland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        brushland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coniferous forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # oceanic abyss
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "oceanic abyss" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # crag
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        crag {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # bloody heap
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bloody heap" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # deciduous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "deciduous forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "mystic grove" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # deadlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deadlands {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shrubland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # meadow forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "meadow forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # bayou
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bayou {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # silkglades
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        silkglades {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # corrupted sands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "corrupted sands" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # nether
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        nether {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # tropics
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tropics {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # river
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        river {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # heathland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        heathland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # spruce woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "spruce woods" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+         }
+ 
+         ####################
+@@ -1768,6 +647,86 @@
+         }
+ 
+         ####################
++        # plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        plains {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # garden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        garden {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # maple woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "maple woods" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # fen
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        fen {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # seasonal spruce forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal spruce forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # junglehills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        junglehills {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ominous woods" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # alps mountainside
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps mountainside" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
+         # snowy beach
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1777,6 +736,896 @@
+             S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
+         }
+ 
++        ####################
++        # boreal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "boreal forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # wonderous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "wonderous woods" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        desert {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # orchard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        orchard {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # canyon
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        canyon {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # quagmire
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        quagmire {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # undergarden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        undergarden {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        meadow {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # frozenocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenocean {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # alps forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # cherry blossom grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "cherry blossom grove" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # pasture meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "pasture meadow" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # marsh
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        marsh {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # tropics mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropics mountain" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # origin valley
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "origin valley" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # tundra
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tundra {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # wetland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wetland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # chaparral
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        chaparral {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # savanna
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        savanna {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # temperate rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "temperate rainforest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # thick shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick shrubland" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # ocean oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ocean oil field" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # snowy dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy dead forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # dead swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead swamp" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # ice plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice plains" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # lush desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush desert" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        rainforest {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # grassland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grassland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # redwood forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "redwood forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # foresthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        foresthills {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        forest {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # majestic meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "majestic meadow" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        timber {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # shield
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shield {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # prairie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        prairie {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # frost forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "frost forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # coral reef
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coral reef" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # wasteland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wasteland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # sludgepit
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sludgepit {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # witchwoodforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        witchwoodforest {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # polar
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        polar {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        field {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # gravel beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "gravel beach" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # extreme hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # lavender fields
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lavender fields" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # alps
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        alps {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # thicket
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        thicket {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # jungle
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        jungle {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # outback
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        outback {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # savanna plateau
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "savanna plateau" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # extreme hills edge
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills edge" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # sky
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sky {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # scrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        scrubland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # thinned timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned timber" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # deserthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deserthills {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # overgrown beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown beach" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # birch forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "birch forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # boneyard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        boneyard {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # mesa
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mesa {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # bog
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bog {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # sublime shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sublime shrubland" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # swampland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        swampland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # phantasmagoric inferno
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "phantasmagoric inferno" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # woodland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        woodland {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        glacier {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # moor
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moor {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # overgrown greens
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown greens" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # ocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        ocean {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # blessed bog
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "blessed bog" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # thinned mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned mystic grove" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # taigahills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        taigahills {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # kelp forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "kelp forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # jade cliffs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "jade cliffs" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # thinned pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned pasture" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # bamboo forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bamboo forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # hell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        hell {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # forested field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "forested field" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # oasis
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        oasis {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # badlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        badlands {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # tainted land
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tainted land" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        steppe {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # autumn hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "autumn hills" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # magical forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "magical forest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # volcano
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        volcano {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # dunes
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        dunes {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # tropical rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropical rainforest" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # canyon ravine
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "canyon ravine" {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
++        ####################
++        # mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mountain {
++            S:MineFactoryReloaded.mfrEntityPinkSlime=0-4-0-4
++        }
++
+     }
+ 
+ }

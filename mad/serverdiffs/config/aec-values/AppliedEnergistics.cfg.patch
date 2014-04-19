@@ -1,0 +1,21 @@
+--- ../original/config/aec-values/AppliedEnergistics.cfg
++++ ../server/config/aec-values/AppliedEnergistics.cfg
+@@ -1,9 +1,9 @@
+-AppEng.Materials.QuartzCrystal=32.0
+-AppEng.Materials.QuartzDustNether=32.0
+-AppEng.Materials.MatterBall=256.0
+-AppEng.Materials.Singularity=256000.0
+-AppEng.Materials.IronDust=256.0
+-AppEng.Materials.QuartzDust=32.0
+-AppEng.Materials.EnderPearlDust=1024.0
+-AppEng.Materials.GoldDust=2048.0
+-AppEng.Materials.Flour=64.0
++AppEng.Materials.IronDust::8=256.0
++AppEng.Materials.QuartzDust::7=0.0
++AppEng.Materials.QuartzDustNether::22=0.0
++AppEng.Materials.QuartzCrystal::6=0.0
++AppEng.Materials.Flour::12=64.0
++AppEng.Materials.Singularity::27=256000.0
++AppEng.Materials.EnderPearlDust::28=1024.0
++AppEng.Materials.GoldDust::9=2048.0
++AppEng.Materials.MatterBall::26=256.0

@@ -1,0 +1,29 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/CreatureType.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/CreatureType.cfg
+@@ -67,7 +67,7 @@
+ 
+     creature {
+         S:"Chunk Spawn Chance"=0.1
+-        I:"Creature Spawn Cap"=40
++        I:"Creature Spawn Cap"=10
+ 
+         # Biome Caps are disabled if default is equal to -1
+         I:"Default Biome Cap"=-1
+@@ -90,7 +90,7 @@
+ 
+     monster {
+         S:"Chunk Spawn Chance"=0.0
+-        I:"Creature Spawn Cap"=175
++        I:"Creature Spawn Cap"=70
+ 
+         # Biome Caps are disabled if default is equal to -1
+         I:"Default Biome Cap"=-1
+@@ -113,7 +113,7 @@
+ 
+     underground {
+         S:"Chunk Spawn Chance"=0.0
+-        I:"Creature Spawn Cap"=80
++        I:"Creature Spawn Cap"=10
+ 
+         # Biome Caps are disabled if default is equal to -1
+         I:"Default Biome Cap"=-1

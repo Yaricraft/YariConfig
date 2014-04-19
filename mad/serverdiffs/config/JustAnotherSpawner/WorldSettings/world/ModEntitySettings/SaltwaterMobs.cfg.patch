@@ -1,0 +1,792 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/SaltwaterMobs.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/SaltwaterMobs.cfg
+@@ -37,6 +37,173 @@
+                 S:SaltwaterMobs.Lacedon=8-4-1-3
+             }
+ 
++        }
++
++        ####################
++        # lush swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush swamp" {
++            S:SaltwaterMobs.Lacedon=8-4-1-3
++        }
++
++        ####################
++        # shore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shore {
++            S:SaltwaterMobs.Lacedon=8-4-1-3
++        }
++
++        ####################
++        # hot springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "hot springs" {
++            S:SaltwaterMobs.Lacedon=8-4-1-3
++        }
++
++        ####################
++        # biomesoplenty
++        ####################
++
++        biomesoplenty {
++            ####################
++            # swampland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            swampland {
++                S:SaltwaterMobs.Lacedon=8-4-1-3
++            }
++
++            ####################
++            # volcano
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            volcano {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # plains
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            plains {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # extreme hills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "extreme hills" {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            forest {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # jungle
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            jungle {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # woodland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            woodland {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # junglehills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            junglehills {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # desert
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            desert {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
++            ####################
++            # taigahills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            taigahills {
++                S:SaltwaterMobs.Lacedon=0-4-0-4
++            }
++
+             ####################
+             # tundra
+             #===================
+@@ -48,163 +215,6 @@
+             }
+ 
+             ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # lush swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush swamp" {
+-            S:SaltwaterMobs.Lacedon=8-4-1-3
+-        }
+-
+-        ####################
+-        # shore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shore {
+-            S:SaltwaterMobs.Lacedon=8-4-1-3
+-        }
+-
+-        ####################
+-        # hot springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "hot springs" {
+-            S:SaltwaterMobs.Lacedon=8-4-1-3
+-        }
+-
+-        ####################
+-        # biomesoplenty
+-        ####################
+-
+-        biomesoplenty {
+-            ####################
+-            # swampland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            swampland {
+-                S:SaltwaterMobs.Lacedon=8-4-1-3
+-            }
+-
+-            ####################
+-            # plains
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            plains {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # extreme hills
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "extreme hills" {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            forest {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # jungle
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            jungle {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # junglehills
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            junglehills {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # desert
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            desert {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+-            # taigahills
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            taigahills {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-            ####################
+             # foresthills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -224,16 +234,6 @@
+                 S:SaltwaterMobs.Lacedon=0-4-0-4
+             }
+ 
+-            ####################
+-            # glacier
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            glacier {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+         }
+ 
+         ####################
+@@ -597,23 +597,6 @@
+         }
+ 
+         ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:SaltwaterMobs.Lacedon=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+         # eerie
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -654,6 +637,16 @@
+         }
+ 
+         ####################
++        # crag
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        crag {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # bloody heap
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -664,16 +657,6 @@
+         }
+ 
+         ####################
+-        # crag
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        crag {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # deciduous forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -944,6 +927,16 @@
+         }
+ 
+         ####################
++        # meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        meadow {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # alps forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -954,16 +947,6 @@
+         }
+ 
+         ####################
+-        # meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        meadow {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # cherry blossom grove
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -994,6 +977,16 @@
+         }
+ 
+         ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # tundra
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1004,16 +997,6 @@
+         }
+ 
+         ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # wetland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1034,6 +1017,16 @@
+         }
+ 
+         ####################
++        # savanna
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        savanna {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # temperate rainforest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1044,16 +1037,6 @@
+         }
+ 
+         ####################
+-        # savanna
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        savanna {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # thick shrubland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1194,6 +1177,16 @@
+         }
+ 
+         ####################
++        # wasteland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wasteland {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # sludgepit
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1204,16 +1197,6 @@
+         }
+ 
+         ####################
+-        # wasteland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wasteland {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # witchwoodforest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1234,6 +1217,16 @@
+         }
+ 
+         ####################
++        # extreme hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills" {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # lavender fields
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1244,16 +1237,6 @@
+         }
+ 
+         ####################
+-        # extreme hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills" {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # alps
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1294,6 +1277,16 @@
+         }
+ 
+         ####################
++        # savanna plateau
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "savanna plateau" {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # extreme hills edge
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1304,16 +1297,6 @@
+         }
+ 
+         ####################
+-        # savanna plateau
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "savanna plateau" {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # sky
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1364,6 +1347,16 @@
+         }
+ 
+         ####################
++        # boneyard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        boneyard {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # mesa
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1374,16 +1367,6 @@
+         }
+ 
+         ####################
+-        # boneyard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        boneyard {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # bog
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1394,6 +1377,26 @@
+         }
+ 
+         ####################
++        # sublime shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sublime shrubland" {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
++        # swampland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        swampland {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # phantasmagoric inferno
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1404,26 +1407,6 @@
+         }
+ 
+         ####################
+-        # sublime shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sublime shrubland" {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+-        # swampland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        swampland {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # woodland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1434,6 +1417,16 @@
+         }
+ 
+         ####################
++        # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        glacier {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # moor
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1494,6 +1487,16 @@
+         }
+ 
+         ####################
++        # thinned pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned pasture" {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # bamboo forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1504,16 +1507,6 @@
+         }
+ 
+         ####################
+-        # thinned pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned pasture" {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # hell
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1574,6 +1567,16 @@
+         }
+ 
+         ####################
++        # autumn hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "autumn hills" {
++            S:SaltwaterMobs.Lacedon=0-4-0-4
++        }
++
++        ####################
+         # magical forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1584,16 +1587,6 @@
+         }
+ 
+         ####################
+-        # autumn hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "autumn hills" {
+-            S:SaltwaterMobs.Lacedon=0-4-0-4
+-        }
+-
+-        ####################
+         # volcano
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize

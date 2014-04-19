@@ -1,0 +1,4140 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/BiomesOPlenty.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/BiomesOPlenty.cfg
+@@ -98,6 +98,54 @@
+             }
+ 
+             ####################
++            # volcano
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            volcano {
++                S:BiomesOPlenty.Bird=0-4-0-4
++                S:BiomesOPlenty.Glob=0-4-0-4
++                S:BiomesOPlenty.JungleSpider=0-4-0-4
++                S:BiomesOPlenty.Phantom=0-4-0-4
++                S:BiomesOPlenty.Pixie=0-4-0-4
++                S:BiomesOPlenty.Rosester=0-4-0-4
++                S:BiomesOPlenty.Wasp=0-4-0-4
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
++                S:BiomesOPlenty.Bird=0-4-0-4
++                S:BiomesOPlenty.Glob=0-4-0-4
++                S:BiomesOPlenty.JungleSpider=0-4-0-4
++                S:BiomesOPlenty.Phantom=0-4-0-4
++                S:BiomesOPlenty.Pixie=0-4-0-4
++                S:BiomesOPlenty.Rosester=0-4-0-4
++                S:BiomesOPlenty.Wasp=0-4-0-4
++            }
++
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:BiomesOPlenty.Bird=0-4-0-4
++                S:BiomesOPlenty.Glob=0-4-0-4
++                S:BiomesOPlenty.JungleSpider=0-4-0-4
++                S:BiomesOPlenty.Phantom=0-4-0-4
++                S:BiomesOPlenty.Pixie=0-4-0-4
++                S:BiomesOPlenty.Rosester=0-4-0-4
++                S:BiomesOPlenty.Wasp=0-4-0-4
++            }
++
++            ####################
+             # plains
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -146,6 +194,38 @@
+             }
+ 
+             ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:BiomesOPlenty.Bird=0-4-0-4
++                S:BiomesOPlenty.Glob=0-4-0-4
++                S:BiomesOPlenty.JungleSpider=0-4-0-4
++                S:BiomesOPlenty.Phantom=0-4-0-4
++                S:BiomesOPlenty.Pixie=0-4-0-4
++                S:BiomesOPlenty.Rosester=0-4-0-4
++                S:BiomesOPlenty.Wasp=0-4-0-4
++            }
++
++            ####################
++            # woodland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            woodland {
++                S:BiomesOPlenty.Bird=0-4-0-4
++                S:BiomesOPlenty.Glob=0-4-0-4
++                S:BiomesOPlenty.JungleSpider=0-4-0-4
++                S:BiomesOPlenty.Phantom=0-4-0-4
++                S:BiomesOPlenty.Pixie=0-4-0-4
++                S:BiomesOPlenty.Rosester=0-4-0-4
++                S:BiomesOPlenty.Wasp=0-4-0-4
++            }
++
++            ####################
+             # desert
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -178,6 +258,22 @@
+             }
+ 
+             ####################
++            # tundra
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            tundra {
++                S:BiomesOPlenty.Bird=0-4-0-4
++                S:BiomesOPlenty.Glob=0-4-0-4
++                S:BiomesOPlenty.JungleSpider=0-4-0-4
++                S:BiomesOPlenty.Phantom=0-4-0-4
++                S:BiomesOPlenty.Pixie=0-4-0-4
++                S:BiomesOPlenty.Rosester=0-4-0-4
++                S:BiomesOPlenty.Wasp=0-4-0-4
++            }
++
++            ####################
+             # foresthills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -209,22 +305,6 @@
+                 S:BiomesOPlenty.Wasp=0-4-0-4
+             }
+ 
+-            ####################
+-            # glacier
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            glacier {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
+         }
+ 
+         ####################
+@@ -564,20 +644,6 @@
+         }
+ 
+         ####################
+-        # twilight swamp
+-        ####################
+-
+-        "twilight swamp" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+         # ice mountains
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -594,20 +660,6 @@
+         }
+ 
+         ####################
+-        # dark forest
+-        ####################
+-
+-        "dark forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+         # pasture
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -646,2022 +698,6 @@
+         ####################
+ 
+         "seasonal forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush swamp" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # shore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shore {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # arctic
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        arctic {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grove {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # hot springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "hot springs" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight stream
+-        ####################
+-
+-        "twilight stream" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # highland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        highland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenriver
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenriver {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "desert oil field" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomislandshore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomislandshore {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy coniferous forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # storage cell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "storage cell" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # icy hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "icy hills" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        beach {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mangrove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mangrove {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # eerie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        eerie {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # moomoofarm
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moomoofarm {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # brushland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        brushland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coniferous forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # oceanic abyss
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "oceanic abyss" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # crag
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        crag {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # bloody heap
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bloody heap" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # deciduous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "deciduous forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "mystic grove" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # deadlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deadlands {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shrubland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "meadow forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # bayou
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bayou {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # silkglades
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        silkglades {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # nether
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        nether {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # river
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        river {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # lake border
+-        ####################
+-
+-        "lake border" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # heathland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        heathland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # spruce woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "spruce woods" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # clearing border
+-        ####################
+-
+-        "clearing border" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        plains {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # maple woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "maple woods" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal spruce forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal spruce forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # junglehills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        junglehills {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ominous woods" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps mountainside
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps mountainside" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # boreal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "boreal forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        desert {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # orchard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        orchard {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # fire swamp
+-        ####################
+-
+-        "fire swamp" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        canyon {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # undergarden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        undergarden {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        meadow {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenocean {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # cherry blossom grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "cherry blossom grove" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # pasture meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "pasture meadow" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # marsh
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        marsh {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # minor feature
+-        ####################
+-
+-        "minor feature" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # origin valley
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "origin valley" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # lots of mushrooms
+-        ####################
+-
+-        "lots of mushrooms" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # tundra
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tundra {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # wetland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wetland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # major feature
+-        ####################
+-
+-        "major feature" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # chaparral
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        chaparral {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        savanna {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # temperate rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "temperate rainforest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # dense twilight forest
+-        ####################
+-
+-        "dense twilight forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick shrubland" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ocean oil field" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy dead forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # ice plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice plains" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush desert" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # grassland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grassland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # foresthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        foresthills {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # redwood forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "redwood forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        forest {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        timber {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # shield
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shield {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # prairie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        prairie {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # frost forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "frost forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # coral reef
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coral reef" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # wasteland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wasteland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # witchwoodforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        witchwoodforest {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # polar
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        polar {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        field {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # gravel beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "gravel beach" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy forest
+-        ####################
+-
+-        "snowy forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # lavender fields
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lavender fields" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        alps {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # thicket
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        thicket {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # jungle
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        jungle {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # outback
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        outback {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna plateau
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "savanna plateau" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills edge
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills edge" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # sky
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sky {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # enchanted forest
+-        ####################
+-
+-        "enchanted forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # scrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        scrubland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned timber" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # deserthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deserthills {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown beach" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # birch forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "birch forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mesa
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mesa {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # swampland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        swampland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # phantasmagoric inferno
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "phantasmagoric inferno" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight forest
+-        ####################
+-
+-        "twilight forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # woodland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        woodland {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # glacier
+-        ####################
+-
+-        glacier {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown greens
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown greens" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        ocean {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned mystic grove" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # taigahills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        taigahills {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # kelp forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "kelp forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # jade cliffs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "jade cliffs" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushrooms
+-        ####################
+-
+-        mushrooms {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned pasture" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight lake
+-        ####################
+-
+-        "twilight lake" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # hell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        hell {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # forested field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "forested field" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # highlands
+-        ####################
+-
+-        highlands {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # badlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        badlands {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight clearing
+-        ####################
+-
+-        "twilight clearing" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # tainted land
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tainted land" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        steppe {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # autumn hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "autumn hills" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # magical forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "magical forest" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # volcano
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        volcano {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # dunes
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        dunes {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon ravine
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "canyon ravine" {
+-            S:BiomesOPlenty.Bird=0-4-0-4
+-            S:BiomesOPlenty.Glob=0-4-0-4
+-            S:BiomesOPlenty.JungleSpider=0-4-0-4
+-            S:BiomesOPlenty.Phantom=0-4-0-4
+-            S:BiomesOPlenty.Pixie=0-4-0-4
+-            S:BiomesOPlenty.Rosester=0-4-0-4
+-            S:BiomesOPlenty.Wasp=0-4-0-4
+-        }
+-
+-        ####################
+-        # mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mountain {
+             S:BiomesOPlenty.Bird=0-4-0-4
+             S:BiomesOPlenty.Glob=0-4-0-4
+             S:BiomesOPlenty.JungleSpider=0-4-0-4
+@@ -2692,86 +728,86 @@
+                 S:BiomesOPlenty.Wasp=0-4-0-4
+             }
+ 
+-            ####################
+-            # tundra
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            tundra {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
+-            ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
++        }
++
++        ####################
++        # lush swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush swamp" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # shore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shore {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # arctic
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        arctic {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grove {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # hot springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "hot springs" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
+         }
+ 
+         ####################
+@@ -2791,26 +827,451 @@
+         }
+ 
+         ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:BiomesOPlenty.Bird=0-4-0-4
+-                S:BiomesOPlenty.Glob=0-4-0-4
+-                S:BiomesOPlenty.JungleSpider=0-4-0-4
+-                S:BiomesOPlenty.Phantom=0-4-0-4
+-                S:BiomesOPlenty.Pixie=0-4-0-4
+-                S:BiomesOPlenty.Rosester=0-4-0-4
+-                S:BiomesOPlenty.Wasp=0-4-0-4
+-            }
+-
++        # highland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        highland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # frozenriver
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenriver {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # mushroomislandshore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomislandshore {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # desert oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "desert oil field" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # snowy coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy coniferous forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # storage cell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "storage cell" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # icy hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "icy hills" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        beach {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # mangrove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mangrove {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # eerie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        eerie {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # moomoofarm
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moomoofarm {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # brushland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        brushland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coniferous forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # oceanic abyss
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "oceanic abyss" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # crag
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        crag {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # bloody heap
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bloody heap" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # deciduous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "deciduous forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "mystic grove" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # deadlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deadlands {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shrubland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # meadow forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "meadow forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # bayou
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bayou {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # silkglades
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        silkglades {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # nether
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        nether {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # river
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        river {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # heathland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        heathland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # spruce woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "spruce woods" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
+         }
+ 
+         ####################
+@@ -2830,6 +1291,102 @@
+         }
+ 
+         ####################
++        # plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        plains {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # maple woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "maple woods" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # seasonal spruce forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal spruce forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # junglehills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        junglehills {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ominous woods" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # alps mountainside
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps mountainside" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
+         # snowy beach
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -2845,6 +1402,1190 @@
+             S:BiomesOPlenty.Wasp=0-4-0-4
+         }
+ 
++        ####################
++        # boreal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "boreal forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        desert {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # orchard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        orchard {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # canyon
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        canyon {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # undergarden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        undergarden {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        meadow {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # frozenocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenocean {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # alps forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # cherry blossom grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "cherry blossom grove" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # pasture meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "pasture meadow" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # marsh
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        marsh {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # origin valley
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "origin valley" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # tundra
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tundra {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # wetland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wetland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # chaparral
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        chaparral {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # savanna
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        savanna {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # temperate rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "temperate rainforest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # thick shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick shrubland" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # ocean oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ocean oil field" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # snowy dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy dead forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # ice plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice plains" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # lush desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush desert" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # grassland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grassland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # redwood forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "redwood forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # foresthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        foresthills {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        forest {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        timber {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # shield
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shield {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # prairie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        prairie {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # frost forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "frost forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # coral reef
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coral reef" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # wasteland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wasteland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # witchwoodforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        witchwoodforest {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # polar
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        polar {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        field {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # gravel beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "gravel beach" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # extreme hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # lavender fields
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lavender fields" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # alps
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        alps {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # thicket
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        thicket {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # jungle
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        jungle {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # outback
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        outback {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # savanna plateau
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "savanna plateau" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # extreme hills edge
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills edge" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # sky
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sky {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # scrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        scrubland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # thinned timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned timber" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # deserthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deserthills {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # overgrown beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown beach" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # birch forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "birch forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # mesa
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mesa {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # swampland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        swampland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # phantasmagoric inferno
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "phantasmagoric inferno" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # woodland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        woodland {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        glacier {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # overgrown greens
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown greens" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # ocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        ocean {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # thinned mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned mystic grove" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # taigahills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        taigahills {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # kelp forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "kelp forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # jade cliffs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "jade cliffs" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # thinned pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned pasture" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # hell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        hell {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # forested field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "forested field" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # badlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        badlands {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # tainted land
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tainted land" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        steppe {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # autumn hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "autumn hills" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # magical forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "magical forest" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # volcano
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        volcano {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # dunes
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        dunes {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # canyon ravine
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "canyon ravine" {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
++        ####################
++        # mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mountain {
++            S:BiomesOPlenty.Bird=0-4-0-4
++            S:BiomesOPlenty.Glob=0-4-0-4
++            S:BiomesOPlenty.JungleSpider=0-4-0-4
++            S:BiomesOPlenty.Phantom=0-4-0-4
++            S:BiomesOPlenty.Pixie=0-4-0-4
++            S:BiomesOPlenty.Rosester=0-4-0-4
++            S:BiomesOPlenty.Wasp=0-4-0-4
++        }
++
+     }
+ 
+ }

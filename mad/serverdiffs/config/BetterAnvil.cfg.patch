@@ -1,0 +1,51 @@
+--- ../original/config/BetterAnvil.cfg
++++ ../server/config/BetterAnvil.cfg
+@@ -159,6 +159,8 @@
+         Night Vision
+         Slow
+      >
++    S:"Flim Flam" <
++     >
+     S:Fortune <
+         Silk Touch
+      >
+@@ -169,6 +171,8 @@
+     S:Infinity <
+      >
+     S:Knockback <
++     >
++    S:"Last Stand" <
+      >
+     S:Looting <
+         Silk Touch
+@@ -217,6 +221,8 @@
+     S:Smite <
+         Sharpness
+         Bane of Arthropods
++     >
++    S:"Soul Stealer" <
+      >
+     S:Swiftness <
+      >
+@@ -260,11 +266,13 @@
+     I:"Fire Protection"=4
+     I:Flame=1
+     I:"Flaming Touch"=1
++    I:"Flim Flam"=4
+     I:Fortune=3
+     I:Frugal=3
+     I:Haste=3
+     I:Infinity=1
+     I:Knockback=2
++    I:"Last Stand"=2
+     I:Looting=3
+     I:Magnetization=1
+     I:"Night Vision"=1
+@@ -282,6 +290,7 @@
+     I:Slow=2
+     I:"Slow Fall"=3
+     I:Smite=5
++    I:"Soul Stealer"=5
+     I:Swiftness=4
+     I:Thorns=3
+     I:Treasure=3

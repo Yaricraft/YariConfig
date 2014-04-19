@@ -1,0 +1,7 @@
+stats: {
+modifier: generic.attackDamage: 0.5~1.2:0,
+modifier: generic.maxHealth:    0.2~0.5:1,
+modifier: generic.movementSpeed: 0.2~0.5:1,
+equip: false:4:0: 357:0:1:{},
+},
+drops: {}

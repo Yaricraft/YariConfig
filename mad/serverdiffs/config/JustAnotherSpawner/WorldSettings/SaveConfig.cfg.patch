@@ -1,0 +1,24 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/SaveConfig.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/SaveConfig.cfg
+@@ -6,17 +6,17 @@
+ 
+ save_configuration {
+     # Default name used for Save_Name. Case Sensitive if OS allows. Beware invalid OS characters.
+-    S:"Default Save_Name"=New World
++    S:"Default Save_Name"=world
+ 
+     # Folder name to Copy Missing Files From. Case Sensitive if OS allows. Beware invalid OS characters.
+     S:Import_Name=
+     ####################
+-    # new world
++    # world
+     ####################
+ 
+-    "new world" {
++    world {
+         # Folder name to look for and generate CFG files. Case Sensitive if OS allows. Beware invalid OS characters.
+-        S:Save_Name=New World
++        S:Save_Name=world
+ 
+         # Determines if Entity CFGs are sorted internally by Entity or Biome.
+         B:"Sort Creature By Biome - Setting"=true

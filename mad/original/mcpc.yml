@@ -1,0 +1,91 @@
+# This is the main configuration file for MCPC+.
+# 
+# If you need help with the configuration or have any questions related to MCPC,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #mcportcentral @ irc.esper.net ( http://webchat.esper.net/?channel=mcportcentral )
+# Forums: http://http://www.mcportcentral.co.za/
+# 
+# Setting: logging.dump-heap-on-deadlock Default: false   # Dump the heap in the event of a deadlock (helps to debug the deadlock)
+# Setting: settings.override-tile-ticks Default: false   # Global setting to override tile entity tick intervals
+# Setting: world-settings.default.infinite-water-source Default: true   # Vanilla water source behavior - is infinite
+# Setting: logging.entity-collision-checks Default: false   # Whether to log entity collision/count checks
+# Setting: settings.dump-materials Default: false   # Dumps all materials with their corresponding id's
+# Setting: logging.dump-chunks-on-deadlock Default: false   # Dump chunks in the event of a deadlock (helps to debug the deadlock)
+# Setting: logging.chunk-unload Default: false   # Log when chunks are unloaded (dev)
+# Setting: logging.warn-place-no-tileentity Default: true   # Warn when a mod requests tile entity from a block that doesn't support one
+# Setting: logging.world-leak-debug Default: false   # Log worlds that appear to be leaking (buggy)
+# Setting: settings.entity-bounding-box-max-size Default: 1000   # Max size of an entity's bounding box before removing it (either being too large or bugged and 'moving' too fast)
+# Setting: logging.chunk-load Default: false   # Log when chunks are loaded (dev)
+# Setting: logging.detailed-logging Default: false   # Add stack traces to dev logging
+# Setting: logging.entity-count-warn-size Default: 0   # Number of entities in one dimension logging a warning. Set to 0 to disable
+# Setting: settings.chunk-gc-grace-period Default: 0   # Grace period on a loaded chunk before we try to unload it
+# Setting: logging.collision-warn-size Default: 200   # Number of colliding entities in one spot before logging a warning. Set to 0 to disable
+# Setting: logging.disabled-warnings Default: false   # Disable warning messages to server admins
+# Setting: settings.load-chunk-on-forge-tick Default: false   # Forces Chunk Loading during Forge Server Tick events
+# Setting: logging.entity-death Default: false   # Log when an entity is destroyed (dev)
+# Setting: fake-players.do-login Default: false   # Raise login events for fake players
+# Setting: logging.dump-threads-on-warn Default: false   # Dump the the server thread on deadlock warning (delps to debug the deadlock)
+# Setting: logging.entity-speed-removal Default: false   # Whether to log entity removals due to speed
+# Setting: logging.entity-spawn Default: false   # Log when living entities are spawned (dev)
+# Setting: debug.thread-contention-monitoring Default: false   # Set true to enable Java's thread contention monitoring for thread dumps
+# Setting: settings.check-entity-max-speeds Default: false   # Removes any entity that exceeds max speed.
+# Setting: settings.load-chunk-async Default: true   # Allow chunks to be loaded async (note: this does not force chunks to load async!)
+# Setting: world-settings.default.flowing-lava-decay Default: false   # Lava behaves like vanilla water when source block is removed
+# Setting: settings.entity-max-speed Default: 100   # Square of the max speed of an entity before removing it
+# Setting: settings.check-entity-bounding-boxes Default: false   # Removes an entity that exceeds the max bounding box size.
+# Setting: settings.load-chunk-on-request Default: true   # Forces Chunk Loading on 'Provide' requests (speedup for mods that don't check if a chunk is loaded
+# Setting: logging.tick-intervals Default: false   # Log when skip interval handlers are ticked
+# Setting: logging.entity-despawn Default: false   # Log when living entities are despawned (dev)
+# Setting: logging.connection Default: false   # Log connections
+# Setting: plugin-settings.default.remap-plugin-file Default: false   # Remap the plugin file (dev)
+
+logging:
+  dump-heap-on-deadlock: false
+  entity-collision-checks: false
+  dump-chunks-on-deadlock: false
+  chunk-unload: false
+  warn-place-no-tileentity: true
+  world-leak-debug: false
+  chunk-load: false
+  detailed-logging: false
+  entity-count-warn-size: '0'
+  collision-warn-size: '200'
+  disabled-warnings: false
+  entity-death: false
+  dump-threads-on-warn: false
+  entity-speed-removal: false
+  entity-spawn: false
+  tick-intervals: false
+  entity-despawn: false
+  connection: false
+settings:
+  override-tile-ticks: false
+  dump-materials: false
+  entity-bounding-box-max-size: '1000'
+  chunk-gc-grace-period: '0'
+  load-chunk-on-forge-tick: false
+  check-entity-max-speeds: false
+  load-chunk-async: true
+  entity-max-speed: '100'
+  check-entity-bounding-boxes: false
+  load-chunk-on-request: true
+world-settings:
+  default:
+    infinite-water-source: true
+    flowing-lava-decay: false
+fake-players:
+  do-login: false
+debug:
+  thread-contention-monitoring: false
+plugin-settings:
+  default:
+    remap-plugin-file: false
+config-version: 1
+world-environment-settings:
+  normal:
+    keep-world-loaded: true
+  nether:
+    keep-world-loaded: true
+  the_end:
+    keep-world-loaded: false

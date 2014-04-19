@@ -1,0 +1,4304 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/DesertMobs.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/DesertMobs.cfg
+@@ -13,12 +13,12 @@
+ 
+     livinghandler {
+         S:DesertMobs.Clink=MONSTER-true
+-        S:DesertMobs.Crusk=NONE-true
++        S:DesertMobs.Crusk=MONSTER-true
+         S:DesertMobs.CryptZombie=MONSTER-true
+-        S:DesertMobs.Erepede=NONE-true
++        S:DesertMobs.Erepede=MONSTER-true
+         S:DesertMobs.Gorgomite=MONSTER-true
+-        S:DesertMobs.Joust=NONE-true
+-        S:DesertMobs.JoustAlpha=MONSTER-true
++        S:DesertMobs.Joust=CREATURE-true
++        S:DesertMobs.JoustAlpha=CREATURE-true
+         S:DesertMobs.Manticore=MONSTER-true
+     }
+ 
+@@ -30,44 +30,53 @@
+ 
+     spawnlistentry {
+         ####################
+-        # desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        desert {
++        # desert oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "desert oil field" {
+             S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
+             S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
+             S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
+             S:DesertMobs.Manticore=4-4-1-5
+         }
+ 
+         ####################
+-        # canyon
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        canyon {
++        # brushland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        brushland {
+             S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
+             S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
+             S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
+             S:DesertMobs.Manticore=4-4-1-5
+         }
+ 
+         ####################
+-        # lush desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush desert" {
++        # corrupted sands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "corrupted sands" {
+             S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
+             S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
+             S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
+             S:DesertMobs.Manticore=4-4-1-5
+         }
+ 
+@@ -76,6 +85,23 @@
+         ####################
+ 
+         biomesoplenty {
++            ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:DesertMobs.Clink=6-4-1-3
++                S:DesertMobs.Crusk=2-4-1-1
++                S:DesertMobs.CryptZombie=8-4-1-3
++                S:DesertMobs.Erepede=4-4-1-2
++                S:DesertMobs.Gorgomite=6-4-1-3
++                S:DesertMobs.Joust=6-4-3-4
++                S:DesertMobs.JoustAlpha=2-4-1-2
++                S:DesertMobs.Manticore=4-4-1-5
++            }
++
+             ####################
+             # desert
+             #===================
+@@ -84,10 +110,64 @@
+ 
+             desert {
+                 S:DesertMobs.Clink=6-4-1-3
++                S:DesertMobs.Crusk=2-4-1-1
+                 S:DesertMobs.CryptZombie=8-4-1-3
++                S:DesertMobs.Erepede=4-4-1-2
+                 S:DesertMobs.Gorgomite=6-4-1-3
+-                S:DesertMobs.JoustAlpha=4-4-1-1
++                S:DesertMobs.Joust=6-4-3-4
++                S:DesertMobs.JoustAlpha=2-4-1-2
+                 S:DesertMobs.Manticore=4-4-1-5
++            }
++
++            ####################
++            # volcano
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            volcano {
++                S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
++                S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
++                S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
++                S:DesertMobs.JoustAlpha=0-4-0-4
++                S:DesertMobs.Manticore=0-4-0-4
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
++                S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
++                S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
++                S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
++                S:DesertMobs.JoustAlpha=0-4-0-4
++                S:DesertMobs.Manticore=0-4-0-4
++            }
++
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
++                S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
++                S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
++                S:DesertMobs.JoustAlpha=0-4-0-4
++                S:DesertMobs.Manticore=0-4-0-4
+             }
+ 
+             ####################
+@@ -98,8 +178,11 @@
+ 
+             swampland {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -112,8 +195,11 @@
+ 
+             plains {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -126,8 +212,11 @@
+ 
+             "extreme hills" {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -140,8 +229,11 @@
+ 
+             forest {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -154,13 +246,33 @@
+ 
+             jungle {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+ 
+             ####################
++            # woodland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            woodland {
++                S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
++                S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
++                S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
++                S:DesertMobs.JoustAlpha=0-4-0-4
++                S:DesertMobs.Manticore=0-4-0-4
++            }
++
++            ####################
+             # junglehills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -168,8 +280,11 @@
+ 
+             junglehills {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -182,13 +297,33 @@
+ 
+             taigahills {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+ 
+             ####################
++            # tundra
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            tundra {
++                S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
++                S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
++                S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
++                S:DesertMobs.JoustAlpha=0-4-0-4
++                S:DesertMobs.Manticore=0-4-0-4
++            }
++
++            ####################
+             # foresthills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -196,8 +331,11 @@
+ 
+             foresthills {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -210,22 +348,392 @@
+ 
+             taiga {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+ 
+-            ####################
+-            # glacier
++        }
++
++        ####################
++        # desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        desert {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # canyon
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        canyon {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # savanna
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        savanna {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # lush desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush desert" {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # outback
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        outback {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # savanna plateau
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "savanna plateau" {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # scrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        scrubland {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # deserthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deserthills {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # mesa
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mesa {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # oasis
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        oasis {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # badlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        badlands {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        steppe {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # dunes
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        dunes {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # canyon ravine
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "canyon ravine" {
++            S:DesertMobs.Clink=6-4-1-3
++            S:DesertMobs.Crusk=2-4-1-1
++            S:DesertMobs.CryptZombie=8-4-1-3
++            S:DesertMobs.Erepede=4-4-1-2
++            S:DesertMobs.Gorgomite=6-4-1-3
++            S:DesertMobs.Joust=6-4-3-4
++            S:DesertMobs.JoustAlpha=2-4-1-2
++            S:DesertMobs.Manticore=4-4-1-5
++        }
++
++        ####################
++        # fungi forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "fungi forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # taiga
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        taiga {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # ice mountains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice mountains" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        pasture {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # thick ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick ominous woods" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # seasonal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # sacred springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sacred springs" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # ttftcuts
++        ####################
++
++        ttftcuts {
++            ####################
++            # gravel beach
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+             ####################
+ 
+-            glacier {
++            "gravel beach" {
+                 S:DesertMobs.Clink=0-4-0-4
++                S:DesertMobs.Crusk=0-4-0-4
+                 S:DesertMobs.CryptZombie=0-4-0-4
++                S:DesertMobs.Erepede=0-4-0-4
+                 S:DesertMobs.Gorgomite=0-4-0-4
++                S:DesertMobs.Joust=0-4-0-4
+                 S:DesertMobs.JoustAlpha=0-4-0-4
+                 S:DesertMobs.Manticore=0-4-0-4
+             }
+@@ -233,1423 +741,1327 @@
+         }
+ 
+         ####################
++        # lush swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush swamp" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # shore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shore {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # arctic
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        arctic {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grove {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # hot springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "hot springs" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # rocky steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "rocky steppe" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # highland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        highland {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # frozenriver
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenriver {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # mushroomislandshore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomislandshore {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # snowy coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy coniferous forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # storage cell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "storage cell" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # icy hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "icy hills" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        beach {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # mangrove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mangrove {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # eerie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        eerie {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # moomoofarm
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moomoofarm {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coniferous forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # oceanic abyss
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "oceanic abyss" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # crag
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        crag {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # bloody heap
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bloody heap" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # deciduous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "deciduous forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "mystic grove" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # deadlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deadlands {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shrubland {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # meadow forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "meadow forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # bayou
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bayou {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # silkglades
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        silkglades {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # nether
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        nether {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # tropics
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tropics {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # river
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        river {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # heathland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        heathland {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # spruce woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "spruce woods" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # tropical shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropical shrubland" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        plains {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # garden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        garden {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # maple woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "maple woods" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # fen
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        fen {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # seasonal spruce forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal spruce forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # junglehills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        junglehills {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ominous woods" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # alps mountainside
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps mountainside" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # snowy beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy beach" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # boreal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "boreal forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # wonderous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "wonderous woods" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # orchard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        orchard {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # quagmire
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        quagmire {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # undergarden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        undergarden {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        meadow {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # frozenocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenocean {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # alps forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # cherry blossom grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "cherry blossom grove" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # pasture meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "pasture meadow" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # marsh
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        marsh {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # tropics mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropics mountain" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # origin valley
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "origin valley" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # tundra
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tundra {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # wetland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wetland {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # chaparral
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        chaparral {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # temperate rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "temperate rainforest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # thick shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick shrubland" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # ocean oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ocean oil field" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # snowy dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy dead forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # dead swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead swamp" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # ice plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice plains" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        rainforest {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # grassland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grassland {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # redwood forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "redwood forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # foresthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        foresthills {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        forest {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # majestic meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "majestic meadow" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        timber {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # shield
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shield {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # prairie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        prairie {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # frost forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "frost forest" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
++        # coral reef
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coral reef" {
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
++            S:DesertMobs.JoustAlpha=0-4-0-4
++            S:DesertMobs.Manticore=0-4-0-4
++        }
++
++        ####################
+         # wasteland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+         ####################
+ 
+         wasteland {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # deserthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deserthills {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # mesa
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mesa {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # badlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        badlands {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # oasis
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        oasis {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        steppe {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # dunes
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        dunes {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # canyon ravine
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "canyon ravine" {
+-            S:DesertMobs.Clink=6-4-1-3
+-            S:DesertMobs.CryptZombie=8-4-1-3
+-            S:DesertMobs.Gorgomite=6-4-1-3
+-            S:DesertMobs.JoustAlpha=4-4-1-1
+-            S:DesertMobs.Manticore=4-4-1-5
+-        }
+-
+-        ####################
+-        # fungi forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "fungi forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # taiga
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        taiga {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight swamp
+-        ####################
+-
+-        "twilight swamp" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # ice mountains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice mountains" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # dark forest
+-        ####################
+-
+-        "dark forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        pasture {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick ominous woods" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # sacred springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sacred springs" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush swamp" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # shore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shore {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # arctic
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        arctic {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grove {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # hot springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "hot springs" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight stream
+-        ####################
+-
+-        "twilight stream" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # highland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        highland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenriver
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenriver {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "desert oil field" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomislandshore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomislandshore {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy coniferous forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # storage cell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "storage cell" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # icy hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "icy hills" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        beach {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # mangrove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mangrove {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # eerie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        eerie {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # moomoofarm
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moomoofarm {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # brushland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        brushland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coniferous forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # oceanic abyss
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "oceanic abyss" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # crag
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        crag {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # bloody heap
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bloody heap" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # deciduous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "deciduous forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "mystic grove" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # deadlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deadlands {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shrubland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "meadow forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # bayou
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bayou {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # silkglades
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        silkglades {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # corrupted sands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "corrupted sands" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # nether
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        nether {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tropics {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # river
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        river {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # lake border
+-        ####################
+-
+-        "lake border" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # heathland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        heathland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # spruce woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "spruce woods" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # clearing border
+-        ####################
+-
+-        "clearing border" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        plains {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # garden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        garden {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # maple woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "maple woods" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # fen
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        fen {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal spruce forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal spruce forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # junglehills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        junglehills {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ominous woods" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps mountainside
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps mountainside" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # boreal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "boreal forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # wonderous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "wonderous woods" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # orchard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        orchard {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # fire swamp
+-        ####################
+-
+-        "fire swamp" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # quagmire
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        quagmire {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # undergarden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        undergarden {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        meadow {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenocean {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # cherry blossom grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "cherry blossom grove" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # pasture meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "pasture meadow" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # marsh
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        marsh {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # minor feature
+-        ####################
+-
+-        "minor feature" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropics mountain" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # origin valley
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "origin valley" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # lots of mushrooms
+-        ####################
+-
+-        "lots of mushrooms" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # tundra
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tundra {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # wetland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wetland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # major feature
+-        ####################
+-
+-        "major feature" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # chaparral
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        chaparral {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        savanna {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # temperate rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "temperate rainforest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # dense twilight forest
+-        ####################
+-
+-        "dense twilight forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick shrubland" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ocean oil field" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy dead forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead swamp" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # ice plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice plains" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        rainforest {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # grassland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grassland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # foresthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        foresthills {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # redwood forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "redwood forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        forest {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # majestic meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "majestic meadow" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        timber {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # shield
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shield {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # prairie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        prairie {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # frost forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "frost forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # coral reef
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coral reef" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Clink=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1662,8 +2074,11 @@
+ 
+         sludgepit {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1676,8 +2091,11 @@
+ 
+         witchwoodforest {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1690,8 +2108,11 @@
+ 
+         polar {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1704,8 +2125,11 @@
+ 
+         field {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1718,20 +2142,11 @@
+ 
+         "gravel beach" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy forest
+-        ####################
+-
+-        "snowy forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1744,8 +2159,11 @@
+ 
+         "extreme hills" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1758,8 +2176,11 @@
+ 
+         "lavender fields" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1772,8 +2193,11 @@
+ 
+         alps {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1786,8 +2210,11 @@
+ 
+         thicket {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1800,36 +2227,11 @@
+ 
+         jungle {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # outback
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        outback {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # savanna plateau
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "savanna plateau" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1842,8 +2244,11 @@
+ 
+         "extreme hills edge" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1856,34 +2261,11 @@
+ 
+         sky {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # enchanted forest
+-        ####################
+-
+-        "enchanted forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # scrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        scrubland {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1896,8 +2278,11 @@
+ 
+         "thinned timber" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1910,8 +2295,11 @@
+ 
+         "overgrown beach" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1924,8 +2312,11 @@
+ 
+         "birch forest" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1938,8 +2329,11 @@
+ 
+         boneyard {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1952,8 +2346,11 @@
+ 
+         bog {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1966,8 +2363,11 @@
+ 
+         "sublime shrubland" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1980,8 +2380,11 @@
+ 
+         swampland {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -1994,20 +2397,11 @@
+ 
+         "phantasmagoric inferno" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight forest
+-        ####################
+-
+-        "twilight forest" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2020,20 +2414,28 @@
+ 
+         woodland {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+ 
+         ####################
+         # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+         ####################
+ 
+         glacier {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2046,8 +2448,11 @@
+ 
+         moor {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2060,8 +2465,11 @@
+ 
+         "overgrown greens" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2074,8 +2482,11 @@
+ 
+         ocean {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2088,8 +2499,11 @@
+ 
+         "blessed bog" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2102,8 +2516,11 @@
+ 
+         "thinned mystic grove" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2116,8 +2533,11 @@
+ 
+         taigahills {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2130,8 +2550,11 @@
+ 
+         "kelp forest" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2144,20 +2567,11 @@
+ 
+         "jade cliffs" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushrooms
+-        ####################
+-
+-        mushrooms {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2170,8 +2584,11 @@
+ 
+         "thinned pasture" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2184,20 +2601,11 @@
+ 
+         "bamboo forest" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight lake
+-        ####################
+-
+-        "twilight lake" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2210,8 +2618,11 @@
+ 
+         hell {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2224,32 +2635,11 @@
+ 
+         "forested field" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # highlands
+-        ####################
+-
+-        highlands {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # twilight clearing
+-        ####################
+-
+-        "twilight clearing" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2262,8 +2652,11 @@
+ 
+         "tainted land" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2276,8 +2669,11 @@
+ 
+         "autumn hills" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2290,8 +2686,11 @@
+ 
+         "magical forest" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2304,8 +2703,11 @@
+ 
+         volcano {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2318,8 +2720,11 @@
+ 
+         "tropical rainforest" {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }
+@@ -2332,162 +2737,11 @@
+ 
+         mountain {
+             S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # ttftcuts
+-        ####################
+-
+-        ttftcuts {
+-            ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:DesertMobs.Clink=6-4-1-3
+-                S:DesertMobs.CryptZombie=8-4-1-3
+-                S:DesertMobs.Gorgomite=6-4-1-3
+-                S:DesertMobs.JoustAlpha=2-4-1-2
+-                S:DesertMobs.Manticore=4-4-1-5
+-            }
+-
+-            ####################
+-            # gravel beach
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "gravel beach" {
+-                S:DesertMobs.Clink=0-4-0-4
+-                S:DesertMobs.CryptZombie=0-4-0-4
+-                S:DesertMobs.Gorgomite=0-4-0-4
+-                S:DesertMobs.JoustAlpha=0-4-0-4
+-                S:DesertMobs.Manticore=0-4-0-4
+-            }
+-
+-            ####################
+-            # tundra
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            tundra {
+-                S:DesertMobs.Clink=0-4-0-4
+-                S:DesertMobs.CryptZombie=0-4-0-4
+-                S:DesertMobs.Gorgomite=0-4-0-4
+-                S:DesertMobs.JoustAlpha=0-4-0-4
+-                S:DesertMobs.Manticore=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:DesertMobs.Clink=0-4-0-4
+-                S:DesertMobs.CryptZombie=0-4-0-4
+-                S:DesertMobs.Gorgomite=0-4-0-4
+-                S:DesertMobs.JoustAlpha=0-4-0-4
+-                S:DesertMobs.Manticore=0-4-0-4
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:DesertMobs.Clink=0-4-0-4
+-                S:DesertMobs.CryptZombie=0-4-0-4
+-                S:DesertMobs.Gorgomite=0-4-0-4
+-                S:DesertMobs.JoustAlpha=0-4-0-4
+-                S:DesertMobs.Manticore=0-4-0-4
+-            }
+-
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:DesertMobs.Clink=0-4-0-4
+-                S:DesertMobs.CryptZombie=0-4-0-4
+-                S:DesertMobs.Gorgomite=0-4-0-4
+-                S:DesertMobs.JoustAlpha=0-4-0-4
+-                S:DesertMobs.Manticore=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # rocky steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "rocky steppe" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:DesertMobs.Clink=0-4-0-4
+-                S:DesertMobs.CryptZombie=0-4-0-4
+-                S:DesertMobs.Gorgomite=0-4-0-4
+-                S:DesertMobs.JoustAlpha=0-4-0-4
+-                S:DesertMobs.Manticore=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # tropical shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropical shrubland" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
+-            S:DesertMobs.JoustAlpha=0-4-0-4
+-            S:DesertMobs.Manticore=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy beach" {
+-            S:DesertMobs.Clink=0-4-0-4
+-            S:DesertMobs.CryptZombie=0-4-0-4
+-            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Crusk=0-4-0-4
++            S:DesertMobs.CryptZombie=0-4-0-4
++            S:DesertMobs.Erepede=0-4-0-4
++            S:DesertMobs.Gorgomite=0-4-0-4
++            S:DesertMobs.Joust=0-4-0-4
+             S:DesertMobs.JoustAlpha=0-4-0-4
+             S:DesertMobs.Manticore=0-4-0-4
+         }

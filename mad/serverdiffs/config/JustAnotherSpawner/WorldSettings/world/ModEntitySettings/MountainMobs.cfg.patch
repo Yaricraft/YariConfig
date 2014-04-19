@@ -1,0 +1,937 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/MountainMobs.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/MountainMobs.cfg
+@@ -24,32 +24,21 @@
+ 
+     spawnlistentry {
+         ####################
+-        # sacred springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sacred springs" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=4-4-1-2
+-        }
+-
+-        ####################
+-        # highland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        highland {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=4-4-1-2
+-        }
+-
+-        ####################
+         # biomesoplenty
+         ####################
+ 
+         biomesoplenty {
++            ####################
++            # volcano
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            volcano {
++                S:MountainMobs.Jabberwock=8-4-1-2
++                S:MountainMobs.Troll=4-4-1-2
++            }
++
+             ####################
+             # extreme hills
+             #===================
+@@ -57,8 +46,30 @@
+             ####################
+ 
+             "extreme hills" {
++                S:MountainMobs.Jabberwock=8-4-1-2
++                S:MountainMobs.Troll=4-4-1-2
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
+                 S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=4-4-1-2
++                S:MountainMobs.Troll=0-4-0-4
++            }
++
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:MountainMobs.Jabberwock=0-4-0-4
++                S:MountainMobs.Troll=0-4-0-4
+             }
+ 
+             ####################
+@@ -95,6 +106,17 @@
+             }
+ 
+             ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:MountainMobs.Jabberwock=0-4-0-4
++                S:MountainMobs.Troll=0-4-0-4
++            }
++
++            ####################
+             # jungle
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -106,6 +128,17 @@
+             }
+ 
+             ####################
++            # woodland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            woodland {
++                S:MountainMobs.Jabberwock=0-4-0-4
++                S:MountainMobs.Troll=0-4-0-4
++            }
++
++            ####################
+             # junglehills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -139,6 +172,17 @@
+             }
+ 
+             ####################
++            # tundra
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            tundra {
++                S:MountainMobs.Jabberwock=0-4-0-4
++                S:MountainMobs.Troll=0-4-0-4
++            }
++
++            ####################
+             # foresthills
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -160,17 +204,28 @@
+                 S:MountainMobs.Troll=0-4-0-4
+             }
+ 
+-            ####################
+-            # glacier
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            glacier {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=0-4-0-4
+-            }
+-
++        }
++
++        ####################
++        # sacred springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sacred springs" {
++            S:MountainMobs.Jabberwock=8-4-1-2
++            S:MountainMobs.Troll=4-4-1-2
++        }
++
++        ####################
++        # highland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        highland {
++            S:MountainMobs.Jabberwock=8-4-1-2
++            S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+         ####################
+@@ -180,7 +235,7 @@
+         ####################
+ 
+         crag {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -191,7 +246,7 @@
+         ####################
+ 
+         "alps mountainside" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -202,7 +257,7 @@
+         ####################
+ 
+         canyon {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -213,7 +268,7 @@
+         ####################
+ 
+         "alps forest" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -224,7 +279,7 @@
+         ####################
+ 
+         "extreme hills" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -235,7 +290,7 @@
+         ####################
+ 
+         alps {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -246,7 +301,7 @@
+         ####################
+ 
+         "extreme hills edge" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+@@ -257,26 +312,114 @@
+         ####################
+ 
+         mesa {
+-            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Jabberwock=8-4-1-2
+             S:MountainMobs.Troll=4-4-1-2
+         }
+ 
+         ####################
++        # jade cliffs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "jade cliffs" {
++            S:MountainMobs.Jabberwock=8-4-1-2
++            S:MountainMobs.Troll=4-4-1-2
++        }
++
++        ####################
++        # volcano
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        volcano {
++            S:MountainMobs.Jabberwock=8-4-1-2
++            S:MountainMobs.Troll=4-4-1-2
++        }
++
++        ####################
++        # mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mountain {
++            S:MountainMobs.Jabberwock=8-4-1-2
++            S:MountainMobs.Troll=4-4-1-2
++        }
++
++        ####################
++        # fungi forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "fungi forest" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
++        # taiga
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        taiga {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
++        # ice mountains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice mountains" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
++        # pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        pasture {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
++        # thick ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick ominous woods" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
++        # seasonal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal forest" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # ttftcuts
+         ####################
+ 
+         ttftcuts {
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=4-4-1-2
+-            }
+-
+             ####################
+             # gravel beach
+             #===================
+@@ -288,149 +431,6 @@
+                 S:MountainMobs.Troll=0-4-0-4
+             }
+ 
+-            ####################
+-            # tundra
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            tundra {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=0-4-0-4
+-            }
+-
+-            ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=0-4-0-4
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # jade cliffs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "jade cliffs" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=4-4-1-2
+-        }
+-
+-        ####################
+-        # volcano
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        volcano {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=4-4-1-2
+-        }
+-
+-        ####################
+-        # mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mountain {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=4-4-1-2
+-        }
+-
+-        ####################
+-        # fungi forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "fungi forest" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+-        # taiga
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        taiga {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+-        # ice mountains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice mountains" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+-        # pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        pasture {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick ominous woods" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal forest" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+         }
+ 
+         ####################
+@@ -511,6 +511,17 @@
+         }
+ 
+         ####################
++        # mushroomislandshore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomislandshore {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # desert oil field
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -522,17 +533,6 @@
+         }
+ 
+         ####################
+-        # mushroomislandshore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomislandshore {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # snowy coniferous forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -555,6 +555,17 @@
+         }
+ 
+         ####################
++        # icy hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "icy hills" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # beach
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -566,17 +577,6 @@
+         }
+ 
+         ####################
+-        # icy hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "icy hills" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # dead forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -588,24 +588,6 @@
+         }
+ 
+         ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:MountainMobs.Jabberwock=0-4-0-4
+-                S:MountainMobs.Troll=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+         # mangrove
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -991,6 +973,17 @@
+         }
+ 
+         ####################
++        # meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        meadow {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # frozenocean
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1002,17 +995,6 @@
+         }
+ 
+         ####################
+-        # meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        meadow {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # cherry blossom grove
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1068,6 +1050,17 @@
+         }
+ 
+         ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # tundra
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1079,17 +1072,6 @@
+         }
+ 
+         ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # wetland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1112,6 +1094,17 @@
+         }
+ 
+         ####################
++        # savanna
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        savanna {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # temperate rainforest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1123,17 +1116,6 @@
+         }
+ 
+         ####################
+-        # savanna
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        savanna {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # thick shrubland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1321,6 +1303,17 @@
+         }
+ 
+         ####################
++        # wasteland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wasteland {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # sludgepit
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1332,17 +1325,6 @@
+         }
+ 
+         ####################
+-        # wasteland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wasteland {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # witchwoodforest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1365,6 +1347,17 @@
+         }
+ 
+         ####################
++        # field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        field {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # gravel beach
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1376,17 +1369,6 @@
+         }
+ 
+         ####################
+-        # field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        field {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # lavender fields
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1530,6 +1512,28 @@
+         }
+ 
+         ####################
++        # sublime shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sublime shrubland" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
++        # swampland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        swampland {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # phantasmagoric inferno
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1541,28 +1545,6 @@
+         }
+ 
+         ####################
+-        # sublime shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sublime shrubland" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+-        # swampland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        swampland {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # woodland
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1574,6 +1556,17 @@
+         }
+ 
+         ####################
++        # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        glacier {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # moor
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1651,6 +1644,17 @@
+         }
+ 
+         ####################
++        # thinned pasture
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned pasture" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # bamboo forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1662,17 +1666,6 @@
+         }
+ 
+         ####################
+-        # thinned pasture
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned pasture" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # hell
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1739,6 +1732,17 @@
+         }
+ 
+         ####################
++        # autumn hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "autumn hills" {
++            S:MountainMobs.Jabberwock=0-4-0-4
++            S:MountainMobs.Troll=0-4-0-4
++        }
++
++        ####################
+         # magical forest
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+@@ -1750,17 +1754,6 @@
+         }
+ 
+         ####################
+-        # autumn hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "autumn hills" {
+-            S:MountainMobs.Jabberwock=0-4-0-4
+-            S:MountainMobs.Troll=0-4-0-4
+-        }
+-
+-        ####################
+         # dunes
+         #===================
+         # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize

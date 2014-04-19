@@ -1,0 +1,4 @@
+--- ../original/config/aec-values/Xeno.cfg
++++ ../server/config/aec-values/Xeno.cfg
+@@ -0,0 +1 @@
++item.emperorChalice=0.0

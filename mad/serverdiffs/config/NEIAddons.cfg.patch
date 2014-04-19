@@ -1,0 +1,18 @@
+--- ../original/config/NEIAddons.cfg
++++ ../server/config/NEIAddons.cfg
+@@ -19,7 +19,6 @@
+ ####################
+ 
+ "applied energistics" {
+-    # If set to true will swap normal and shift click behavior
+     B:"Invert Shift"=false
+ }
+ 
+@@ -72,7 +71,6 @@
+ ####################
+ 
+ general {
+-    # Enable to register fake items to work around NEI not showing items with metadata outside cheat mode
+     B:"Enable fake items"=false
+ }
+ 

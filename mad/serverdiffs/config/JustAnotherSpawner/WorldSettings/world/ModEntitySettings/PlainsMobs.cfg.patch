@@ -1,0 +1,3331 @@
+--- ../original/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/PlainsMobs.cfg
++++ ../server/config/JustAnotherSpawner/WorldSettings/world/ModEntitySettings/PlainsMobs.cfg
+@@ -13,8 +13,8 @@
+ 
+     livinghandler {
+         S:PlainsMobs.Kobold=MONSTER-true
+-        S:PlainsMobs.Maka=NONE-true
+-        S:PlainsMobs.MakaAlpha=NONE-true
++        S:PlainsMobs.Maka=CREATURE-true
++        S:PlainsMobs.MakaAlpha=CREATURE-true
+         S:PlainsMobs.Ventoraptor=MONSTER-true
+     }
+ 
+@@ -33,6 +33,60 @@
+ 
+         pasture {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # hot springs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "hot springs" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        grove {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # rocky steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "rocky steppe" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # highland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        highland {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -41,6 +95,19 @@
+         ####################
+ 
+         biomesoplenty {
++            ####################
++            # shrubland
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            shrubland {
++                S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
++                S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
+             ####################
+             # plains
+             #===================
+@@ -49,7 +116,100 @@
+ 
+             plains {
+                 S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
+                 S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
++            ####################
++            # extreme hills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "extreme hills" {
++                S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
++                S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
++            ####################
++            # savanna
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            savanna {
++                S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
++                S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
++            ####################
++            # junglehills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            junglehills {
++                S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
++                S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
++            ####################
++            # taigahills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            taigahills {
++                S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
++                S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
++            ####################
++            # foresthills
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            foresthills {
++                S:PlainsMobs.Kobold=8-4-1-3
++                S:PlainsMobs.Maka=14-4-3-4
++                S:PlainsMobs.MakaAlpha=2-4-1-2
++                S:PlainsMobs.Ventoraptor=4-4-1-3
++            }
++
++            ####################
++            # volcano
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            volcano {
++                S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
++                S:PlainsMobs.Ventoraptor=0-4-0-4
++            }
++
++            ####################
++            # boreal forest
++            #===================
++            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++            ####################
++
++            "boreal forest" {
++                S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
++                S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+             ####################
+@@ -60,17 +220,8 @@
+ 
+             swampland {
+                 S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
+-            ####################
+-            # extreme hills
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "extreme hills" {
+-                S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+@@ -82,6 +233,8 @@
+ 
+             forest {
+                 S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+@@ -93,17 +246,21 @@
+ 
+             jungle {
+                 S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+             ####################
+-            # junglehills
++            # woodland
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+             ####################
+ 
+-            junglehills {
++            woodland {
+                 S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+@@ -115,28 +272,21 @@
+ 
+             desert {
+                 S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+             ####################
+-            # taigahills
++            # tundra
+             #===================
+             # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+             ####################
+ 
+-            taigahills {
++            tundra {
+                 S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
+-            ####################
+-            # foresthills
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            foresthills {
+-                S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+@@ -148,20 +298,63 @@
+ 
+             taiga {
+                 S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+-            ####################
+-            # glacier
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            glacier {
+-                S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
++        }
++
++        ####################
++        # snowy coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy coniferous forest" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # icy hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "icy hills" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # eerie
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        eerie {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # moomoofarm
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moomoofarm {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+         ####################
+@@ -172,6 +365,21 @@
+ 
+         brushland {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # coniferous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coniferous forest" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -183,6 +391,21 @@
+ 
+         shrubland {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # meadow forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "meadow forest" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -194,6 +417,8 @@
+ 
+         heathland {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -205,6 +430,8 @@
+ 
+         plains {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -216,6 +443,34 @@
+ 
+         garden {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # orchard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        orchard {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # canyon
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        canyon {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -227,6 +482,8 @@
+ 
+         meadow {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -238,17 +495,8 @@
+ 
+         "pasture meadow" {
+             S:PlainsMobs.Kobold=8-4-1-3
+-            S:PlainsMobs.Ventoraptor=4-4-1-3
+-        }
+-
+-        ####################
+-        # origin valley
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "origin valley" {
+-            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -260,6 +508,21 @@
+ 
+         chaparral {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # temperate rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "temperate rainforest" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -271,6 +534,34 @@
+ 
+         savanna {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # thick shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thick shrubland" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        rainforest {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -282,6 +573,21 @@
+ 
+         grassland {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # majestic meadow
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "majestic meadow" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -293,6 +599,8 @@
+ 
+         prairie {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -304,6 +612,8 @@
+ 
+         field {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -315,6 +625,8 @@
+ 
+         "lavender fields" {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -326,6 +638,8 @@
+ 
+         thicket {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -337,6 +651,8 @@
+ 
+         outback {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -348,6 +664,8 @@
+ 
+         "savanna plateau" {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -359,6 +677,60 @@
+ 
+         scrubland {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # sublime shrubland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "sublime shrubland" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # glacier
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        glacier {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # moor
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        moor {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # overgrown greens
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown greens" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -370,6 +742,73 @@
+ 
+         "thinned pasture" {
+             S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # forested field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "forested field" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # steppe
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        steppe {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # autumn hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "autumn hills" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # dunes
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        dunes {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
++            S:PlainsMobs.Ventoraptor=4-4-1-3
++        }
++
++        ####################
++        # canyon ravine
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "canyon ravine" {
++            S:PlainsMobs.Kobold=8-4-1-3
++            S:PlainsMobs.Maka=14-4-3-4
++            S:PlainsMobs.MakaAlpha=2-4-1-2
+             S:PlainsMobs.Ventoraptor=4-4-1-3
+         }
+ 
+@@ -381,6 +820,8 @@
+ 
+         "fungi forest" {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+@@ -392,6 +833,8 @@
+ 
+         taiga {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+@@ -403,6 +846,8 @@
+ 
+         "ice mountains" {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+@@ -414,6 +859,8 @@
+ 
+         "thick ominous woods" {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+@@ -425,6 +872,8 @@
+ 
+         "seasonal forest" {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+@@ -436,1250 +885,9 @@
+ 
+         "sacred springs" {
+             S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush swamp" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # shore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shore {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # arctic
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        arctic {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        grove {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # hot springs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "hot springs" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # highland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        highland {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenriver
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenriver {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "desert oil field" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomislandshore
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomislandshore {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy coniferous forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # storage cell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "storage cell" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        beach {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # icy hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "icy hills" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # mangrove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mangrove {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # moomoofarm
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moomoofarm {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # coniferous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coniferous forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # oceanic abyss
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "oceanic abyss" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # bloody heap
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bloody heap" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # crag
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        crag {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # deciduous forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "deciduous forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "mystic grove" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # deadlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deadlands {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # meadow forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "meadow forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # bayou
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bayou {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # silkglades
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        silkglades {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # corrupted sands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "corrupted sands" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # nether
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        nether {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tropics {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # river
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        river {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # spruce woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "spruce woods" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # maple woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "maple woods" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # fen
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        fen {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # seasonal spruce forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "seasonal spruce forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # junglehills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        junglehills {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # ominous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ominous woods" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps mountainside
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps mountainside" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # boreal forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "boreal forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # wonderous woods
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "wonderous woods" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        desert {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # orchard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        orchard {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        canyon {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # quagmire
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        quagmire {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # undergarden
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        undergarden {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # frozenocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        frozenocean {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "alps forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # cherry blossom grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "cherry blossom grove" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # marsh
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        marsh {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropics mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropics mountain" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # tundra
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        tundra {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # mushroomisland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mushroomisland {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # wetland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wetland {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # temperate rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "temperate rainforest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # thick shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thick shrubland" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean oil field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ocean oil field" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # snowy dead forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "snowy dead forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # dead swamp
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "dead swamp" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # ice plains
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "ice plains" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # lush desert
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "lush desert" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        rainforest {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # redwood forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "redwood forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # foresthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        foresthills {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        forest {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        timber {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # majestic meadow
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "majestic meadow" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # shield
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        shield {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # frost forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "frost forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # coral reef
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "coral reef" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # sludgepit
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sludgepit {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # wasteland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        wasteland {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # witchwoodforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        witchwoodforest {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # polar
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        polar {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # gravel beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "gravel beach" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # alps
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        alps {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # jungle
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        jungle {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # extreme hills edge
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "extreme hills edge" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # sky
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        sky {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned timber
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned timber" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # deserthills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        deserthills {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown beach
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown beach" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # birch forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "birch forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # mesa
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mesa {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # boneyard
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        boneyard {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # bog
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        bog {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # phantasmagoric inferno
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "phantasmagoric inferno" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # sublime shrubland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "sublime shrubland" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # swampland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        swampland {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # woodland
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        woodland {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # moor
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        moor {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # overgrown greens
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "overgrown greens" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # ocean
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        ocean {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # blessed bog
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "blessed bog" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # thinned mystic grove
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "thinned mystic grove" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # taigahills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        taigahills {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # kelp forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "kelp forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # jade cliffs
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "jade cliffs" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # bamboo forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "bamboo forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # hell
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        hell {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # forested field
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "forested field" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # oasis
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        oasis {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # badlands
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        badlands {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        steppe {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # autumn hills
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "autumn hills" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # volcano
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        volcano {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # dunes
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        dunes {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # tropical rainforest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tropical rainforest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # canyon ravine
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "canyon ravine" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # mountain
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        mountain {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # eerie
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        eerie {
+-            S:PlainsMobs.Kobold=8-4-1-3
+-            S:PlainsMobs.Ventoraptor=4-4-1-3
+-        }
+-
+-        ####################
+-        # tainted land
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "tainted land" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # magical forest
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "magical forest" {
+-            S:PlainsMobs.Kobold=0-4-0-4
+-            S:PlainsMobs.Ventoraptor=0-4-0-4
+-        }
+-
+-        ####################
+-        # rocky steppe
+-        #===================
+-        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-        ####################
+-
+-        "rocky steppe" {
+-            S:PlainsMobs.Kobold=8-4-1-3
+-            S:PlainsMobs.Ventoraptor=4-4-1-3
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+         ####################
+@@ -1687,28 +895,6 @@
+         ####################
+ 
+         ttftcuts {
+-            ####################
+-            # savanna
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            savanna {
+-                S:PlainsMobs.Kobold=8-4-1-3
+-                S:PlainsMobs.Ventoraptor=4-4-1-3
+-            }
+-
+-            ####################
+-            # shrubland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            shrubland {
+-                S:PlainsMobs.Kobold=8-4-1-3
+-                S:PlainsMobs.Ventoraptor=4-4-1-3
+-            }
+-
+             ####################
+             # gravel beach
+             #===================
+@@ -1717,60 +903,310 @@
+ 
+             "gravel beach" {
+                 S:PlainsMobs.Kobold=0-4-0-4
++                S:PlainsMobs.Maka=0-4-0-4
++                S:PlainsMobs.MakaAlpha=0-4-0-4
+                 S:PlainsMobs.Ventoraptor=0-4-0-4
+             }
+ 
+-            ####################
+-            # tundra
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            tundra {
+-                S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
+-            ####################
+-            # woodland
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            woodland {
+-                S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
+-            ####################
+-            # volcano
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            volcano {
+-                S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
+-        }
+-
+-        ####################
+-        # net
+-        ####################
+-
+-        net {
+-            ####################
+-            # boreal forest
+-            #===================
+-            # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
+-            ####################
+-
+-            "boreal forest" {
+-                S:PlainsMobs.Kobold=0-4-0-4
+-                S:PlainsMobs.Ventoraptor=0-4-0-4
+-            }
+-
++        }
++
++        ####################
++        # lush swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush swamp" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # shore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shore {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # arctic
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        arctic {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # frozenriver
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenriver {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # mushroomislandshore
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomislandshore {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # desert oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "desert oil field" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # storage cell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "storage cell" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        beach {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # mangrove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mangrove {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # oceanic abyss
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "oceanic abyss" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # crag
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        crag {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # bloody heap
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bloody heap" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # deciduous forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "deciduous forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "mystic grove" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # deadlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deadlands {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # bayou
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bayou {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # silkglades
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        silkglades {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # corrupted sands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "corrupted sands" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # nether
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        nether {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # tropics
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tropics {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # river
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        river {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # spruce woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "spruce woods" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+         ####################
+@@ -1781,6 +1217,86 @@
+ 
+         "tropical shrubland" {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # maple woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "maple woods" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # fen
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        fen {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # seasonal spruce forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "seasonal spruce forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # junglehills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        junglehills {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # ominous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ominous woods" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # alps mountainside
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps mountainside" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 
+@@ -1792,6 +1308,801 @@
+ 
+         "snowy beach" {
+             S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # boreal forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "boreal forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # wonderous woods
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "wonderous woods" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        desert {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # quagmire
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        quagmire {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # undergarden
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        undergarden {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # frozenocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        frozenocean {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # alps forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "alps forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # cherry blossom grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "cherry blossom grove" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # marsh
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        marsh {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # tropics mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropics mountain" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # origin valley
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "origin valley" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # mushroomisland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mushroomisland {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # tundra
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        tundra {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # wetland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wetland {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # ocean oil field
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ocean oil field" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # snowy dead forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "snowy dead forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # dead swamp
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "dead swamp" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # ice plains
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "ice plains" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # lush desert
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "lush desert" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # redwood forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "redwood forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # foresthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        foresthills {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        forest {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        timber {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # shield
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        shield {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # frost forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "frost forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # coral reef
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "coral reef" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # wasteland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        wasteland {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # sludgepit
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sludgepit {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # witchwoodforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        witchwoodforest {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # polar
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        polar {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # gravel beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "gravel beach" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # extreme hills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # alps
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        alps {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # jungle
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        jungle {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # extreme hills edge
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "extreme hills edge" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # sky
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        sky {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # thinned timber
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned timber" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # deserthills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        deserthills {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # overgrown beach
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "overgrown beach" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # birch forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "birch forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # boneyard
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        boneyard {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # mesa
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mesa {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # bog
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        bog {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # swampland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        swampland {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # phantasmagoric inferno
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "phantasmagoric inferno" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # woodland
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        woodland {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # ocean
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        ocean {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # blessed bog
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "blessed bog" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # thinned mystic grove
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "thinned mystic grove" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # taigahills
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        taigahills {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # kelp forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "kelp forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # jade cliffs
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "jade cliffs" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # bamboo forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "bamboo forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # hell
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        hell {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # oasis
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        oasis {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # badlands
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        badlands {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # tainted land
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tainted land" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # magical forest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "magical forest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # volcano
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        volcano {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # tropical rainforest
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        "tropical rainforest" {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
++            S:PlainsMobs.Ventoraptor=0-4-0-4
++        }
++
++        ####################
++        # mountain
++        #===================
++        # Editable Format: SpawnWeight-SpawnPackSize-MinChunkPackSize-MaxChunkPackSize
++        ####################
++
++        mountain {
++            S:PlainsMobs.Kobold=0-4-0-4
++            S:PlainsMobs.Maka=0-4-0-4
++            S:PlainsMobs.MakaAlpha=0-4-0-4
+             S:PlainsMobs.Ventoraptor=0-4-0-4
+         }
+ 

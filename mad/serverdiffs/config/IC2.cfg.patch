@@ -1,0 +1,27 @@
+--- ../original/config/IC2.cfg
++++ ../server/config/IC2.cfg
+@@ -137,10 +137,10 @@
+     I:energyGeneratorWind=100
+ 
+     # Maximum Explosion power of a nuke, where TNT is 4
+-    S:explosionPowerNuke=60.0
++    S:explosionPowerNuke=1.0
+ 
+     # Maximum explosion power of a nuclear reactor, where TNT is 4
+-    S:explosionPowerReactorMax=45.0
++    S:explosionPowerReactorMax=1.0
+ 
+     # Factor to adjust the ore generation rate
+     S:oreDensityFactor=1.0
+@@ -153,11 +153,7 @@
+ 
+     # List of blocks and items which are only allowed to be turned into scrap by the recycler, Overrides Blacklist if not left empty. Comma separated, format is id-metadata
+     S:recyclerWhitelist=
+-
+-    # Maximum number of audio sources, only change if you know what you're doing
+     I:soundSourceLimit=32
+-
+-    # Enable sounds
+     B:soundsEnabled=true
+ 
+     # List of valuable ores the miner should look for. Comma separated, format is id-metadata:value where value should be at least 1 to be considered by the miner
