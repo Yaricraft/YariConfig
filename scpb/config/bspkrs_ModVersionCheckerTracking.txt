@@ -1,0 +1,13 @@
+# Configuration file
+
+####################
+# version_check_tracker
+####################
+
+version_check_tracker {
+    S:ArmorStatusHUD=1.18(1.7.2)
+    S:TreeCapitator=1.7.2.r01
+    S:bspkrsCore=6.3(1.7.2)
+}
+
+
