@@ -28,16 +28,26 @@ def cleanDirs(path):
         
 def main():
     print "Creating patches"
+    
     strConfigDir = os.path.dirname(os.path.abspath(__file__))
     parser = OptionParser()
-    parser.add_option('-p', '--pack', action='store', dest='strPack', help='Pack to use.', default='mad')
+    
+    parser.add_option('-p', '--pack', action='store', dest='optPack', help='Pack to use.', default='scpb')
+    parser.add_option('-c', '--config', action='store', dest='optConfig', help='Name of configs to compare to.', default='yari')
+    
     options, _ = parser.parse_args()
     
-    strPackDir = os.path.abspath(options.strPack)
+    optPack = os.path.abspath(options.optPack)
+    print "Using option "+optPack
+    optConfig = os.path.abspath(options.optConfig)
+    print "Using option "+optConfig
 
-    diff = os.path.normpath(os.path.join(strPackDir, 'serverdiffs'))
-    base = os.path.normpath(os.path.join(strPackDir, 'original'))
-    work = os.path.normpath(os.path.join(strPackDir, 'server'))
+    diff = os.path.normpath(os.path.join(optPack, optConfig+'_patches'))
+    print "Patches going to "+diff
+    base = os.path.normpath(os.path.join(optPack, 'original'))
+    print "Using base configs at "+base
+    work = os.path.normpath(os.path.join(optPack, optConfig))
+    print "Using edited configs at "+work
     
     for path, _, filelist in os.walk(work, followlinks=True):
         for cur_file in fnmatch.filter(filelist, '*.cfg'):
