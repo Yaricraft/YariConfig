@@ -4,7 +4,14 @@ import fnmatch
 import shlex
 import difflib
 import time
+
 from optparse import OptionParser
+
+from yaml import load, dump
+try:
+    from yaml import CLoader as Loader, CDumper as Dumper
+except ImportError:
+    from yaml import Loader, Dumper
 
 def cmdsplit(args):
     if os.sep == '\\':
@@ -33,6 +40,12 @@ def main():
     print "    ============================="
     print "   Minecraft configuration utility."
     print ""
+    
+    streamPacks = open("packs.yml", "r")
+    dataPacks = load(streamPacks, Loader=Loader)
+    
+    defBase = dataPacks['packs']['scpb']['base']
+    defWork = dataPacks['packs']['scpb']['work']
     
     # Get the path we are running the script in.
     strPathCurrent = os.path.dirname(os.path.abspath(__file__))
@@ -69,6 +82,8 @@ def main():
         return
     
     strNormPatches = os.path.normpath(strPathWork.join('_patches'))
+    
+    return
     
     for path, _, filelist in os.walk(strNormWork, followlinks=True):
         for cur_file in fnmatch.filter(filelist, '*'):
