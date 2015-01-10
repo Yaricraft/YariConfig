@@ -1,3 +1,16 @@
+--- 
 packs: 
-  mad: mad/original
-  scpb: scpb/original
+  mad: 
+    base: mad/original
+    desc: ~
+    name: "The MadPack"
+    patch: mad/serverdiffs
+    url: ~
+    work: mad/server
+  scpb: 
+    base: scpb/original
+    desc: ~
+    name: "Super Chinese Peanut Butter"
+    patch: scpb/yari_patches
+    url: www.yaricraft.com/scpb
+    work: scpb/yari
