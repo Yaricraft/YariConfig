@@ -1,0 +1,30 @@
+lastAccountName: CJlishly
+timestamps:
+  login: 1436304630276
+  lastteleport: 1436305176377
+  logout: 1436305367870
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 313.96875827668157
+  y: 11.0
+  z: -2217.300000011921
+  yaw: -99.09471
+  pitch: 18.72972
+homes:
+  home:
+    world: world
+    x: 375.22266013123624
+    y: 73.0
+    z: -2494.678759061848
+    yaw: -307.69366
+    pitch: 53.182056
+afk: false
+nickname: KarlsKiller
+logoutlocation:
+  world: world
+  x: 370.5876316362741
+  y: 67.0
+  z: -2493.977430805787
+  yaw: 129.8132
+  pitch: 27.135414

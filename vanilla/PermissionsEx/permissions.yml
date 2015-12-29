@@ -1,0 +1,20 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+  derp:
+    options:
+      default: false
+      prefix: '&4{&eD&7e&er&7p&4}&r '
+    permissions:
+    - yariplus
+    - '*'
+schema-version: 1
+users:
+  f19cb160-5bc2-4838-835a-07757d60ce80:
+    group: []
+    options:
+      name: yariplus
+      prefix: '&aThe Derpinator'

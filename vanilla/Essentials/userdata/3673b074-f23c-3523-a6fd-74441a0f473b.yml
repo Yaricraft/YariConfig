@@ -1,0 +1,31 @@
+lastAccountName: eethompson
+timestamps:
+  login: 1434304988231
+  logout: 1434305285381
+  kits:
+    tools: 1432643418267
+  lastteleport: 1434305281396
+ipAddress: 92.2.152.213
+lastlocation:
+  world: world
+  x: 1855.3273365947623
+  y: 29.0
+  z: 2055.6714194473234
+  yaw: -99.288864
+  pitch: 21.83032
+logoutlocation:
+  world: world
+  x: 1978.5
+  y: 86.0
+  z: 1985.5
+  yaw: -0.9594116
+  pitch: 13.162192
+homes:
+  home:
+    world: world
+    x: 1978.503648532731
+    y: 86.0
+    z: 1985.7948339456261
+    yaw: -0.9594116
+    pitch: 13.162192
+afk: false

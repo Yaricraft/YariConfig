@@ -1,0 +1,28 @@
+lastAccountName: bazzbailey2445
+timestamps:
+  login: 1448135307060
+  logout: 1448135323532
+  lastteleport: 1445798461787
+ipAddress: 86.129.194.9
+lastlocation:
+  world: world
+  x: 2171.708617962429
+  y: 60.09529288996314
+  z: 2372.202700995746
+  yaw: -185.8308
+  pitch: 13.199883
+logoutlocation:
+  world: world
+  x: 2195.5
+  y: 105.0
+  z: 2306.5
+  yaw: -211.82211
+  pitch: 24.939182
+homes:
+  home:
+    world: world
+    x: 2198.2626491640417
+    y: 105.0
+    z: 2308.3241081555234
+    yaw: -331.63068
+    pitch: 19.049894

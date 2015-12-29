@@ -1,0 +1,212 @@
+vote:
+    help:
+        GeneralHelpNotFound: '&CNo help list found.'
+        VoteStartHelpNotFound: '&CNo votes you can start found.'
+        GeneralCommands:
+        - '&6/vote yes &A- Vote yes on the active vote.'
+        - '&6/vote no &A- Vote no on the active vote.'
+        - '&6/vote [votename] &A- Start a new vote with the keyword. '
+        - '&6/vote list &A- Display list of votes you can start.'
+        - '&6/vote veto &A- Immediately cancel vote in progress.'
+        - '&6/vote reload &A- Reload Vote plugin.'
+    application:
+        files:
+            config:
+                Version: '2.0'
+        Version: '1.7.9_01'
+    default:
+        VoteEndSuccessText: '&AThe majority has voted yes.'
+        NoVoteInProgress: '&CNo vote is currently in progress!'
+        PlayerUnbannable: '&A[%0] &Ccannot be banned!'
+        VoteAlreadyInProgress: '&CA vote is already active, please wait to start another vote.'
+        VoteStartText: '&A[%0] has started a vote! Type &6/vote Yes &Aor &6/vote No &Ato vote.'
+        VoteCanceled: '&AThe vote has been canceled.'
+        PlayerVoteCounted: '&AVote counted.'
+        PlayerVoteStartNoPermission: '&CYou do not have permission to start a vote.'
+        PlayerNotFound: '&A[%0] &Ccannot be found!'
+        PlayerSetValueNoPermission: '&CYou do not have permission to the setvalue command.'
+        PlayerUnkickable: '&A[%0] &Ccannot be kicked!'
+        PlayerVoteChanged: '&AYou changed your vote.'
+        VoteEndFailText: '&AThe majority has voted no.'
+        PlayerVoteNoPermission: 'You do not have permission to vote.'
+        PlayerAlreadyVoted: '&CYou have already voted!'
+        VoteYesCommands:
+        - 'yes'
+        - 'y'
+        VoteNoCommands:
+        - 'no'
+        - 'n'
+        VoteListCommands:
+        - 'list'
+        VoteHelpCommands:
+        - 'help'
+        VoteVetoCommands:
+        - 'veto'
+        ReloadCommands:
+        - 'reload'
+        VoteVetoNoPermission: '&CYou do not have permission to veto!'
+        ReloadNoPermission: '&CYou do not have permission to reload!'
+        VoteNotFound: '&C[%0] does not exist!'
+        PlayerIPAlreadyVoted: '&CA player with your IP address has already voted!'
+        CheckPlayerIPAddress: true
+    votes:
+        ban:
+            Description: 'Ban a player'
+            ArgumentCount: 1
+            InsufficientArgumentsError: '&CIncorrect arguments! You need to do /Vote ban PlayerName where PlayerName is the players name'
+            VoteStartText: '&A[%1] has started a vote to ban &C[%0]&A! Type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CA player has been banned too recently!'
+            VoteSuccessText: '&AVote succeeded! &C[%0] &Ahas been banned'
+            VoteSuccessCommandDelaySeconds: 3
+            VoteSuccessCommands:
+            - FINDPLAYER[%0]
+            - VERIFYPLAYERONLINE [%0]
+            - vote setvalue ban [%0]
+            CooldownMinutesToSuccessRevote: 15
+            VoteFailText: '&AVote to ban &C[%0] &Afailed!'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 30
+            MinimumVotes: 1
+            PercentToSucceed: 10000
+            IgnoreUnvotedPlayers: true
+            IsConsoleCommand: true
+            LastSuccessfulVote: 0
+            LastFailedVote: 0
+        kick:
+            Description: 'Kick player'
+            ArgumentCount: 1
+            InsufficientArgumentsError: '&CIncorrect arguments! You need to do /Vote kick PlayerName where PlayerName is the players name'
+            VoteStartText: '&A[%1] has started a vote to kick &C[%0]&A! Type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CA player has been kicked too recently!'
+            VoteSuccessText: '&AVote succeeded! &C[%0] &Ahas been kicked'
+            VoteSuccessCommandDelaySeconds: 3
+            VoteSuccessCommands:
+            - FINDPLAYER[%0]
+            - VERIFYPLAYERONLINE [%0]
+            - vote setvalue kick [%0]
+            CooldownMinutesToSuccessRevote: 1
+            VoteFailText: '&AVote to kick &C[%0] &Afailed!'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 30
+            MinimumVotes: 1
+            PercentToSucceed: 10000
+            IgnoreUnvotedPlayers: true
+            IsConsoleCommand: true
+            LastSuccessfulVote: 0
+            LastFailedVote: 0
+        restart:
+            Description: 'Restart the server'
+            ArgumentCount: 0
+            InsufficientArgumentsError: ''
+            VoteStartText: '&A[%0] has started a vote to restart the server! Type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CThe server has been restarted recently. Please wait a bit before trying again.'
+            VoteSuccessText: '&AVote succeeded! Restarting server in 60 seconds'
+            VoteSuccessCommandDelaySeconds: 60
+            VoteSuccessCommands:
+            - kickall
+            - save-all
+            - stop
+            CooldownMinutesToSuccessRevote: 120
+            VoteFailText: '&AVote to kick &C[%0] &Afailed!'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 30
+            MinimumVotes: 1
+            PercentToSucceed: 100
+            IgnoreUnvotedPlayers: false
+            IsConsoleCommand: true
+            LastSuccessfulVote: 0
+            LastFailedVote: 0
+        night:
+            Description: 'Set time to night'
+            ArgumentCount: 0
+            InsufficientArgumentsError: ''
+            VoteStartText: '&A[%0] has started a vote to set the time to night! Type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CThe time has been set to night too recently!'
+            VoteSuccessText: '&AVote succeeded! Time set to night'
+            VoteSuccessCommandDelaySeconds: 0
+            VoteSuccessCommands:
+            - vote setvalue time 13000
+            CooldownMinutesToSuccessRevote: 10
+            VoteFailText: '&AVote failed! Try again the next time day comes around.'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 15
+            MinimumVotes: 1
+            PercentToSucceed: 60
+            IgnoreUnvotedPlayers: true
+            IsConsoleCommand: false
+            LastSuccessfulVote: 0
+            LastFailedVote: 0
+        day:
+            Description: 'Set time to day'
+            ArgumentCount: 0
+            InsufficientArgumentsError: ''
+            VoteStartText: '&A[%0] has started a vote to set the time to day! Type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CThe time has been set to day too recently!'
+            VoteSuccessText: '&AVote succeeded! Time set to day'
+            VoteSuccessCommandDelaySeconds: 0
+            VoteSuccessCommands:
+            - vote setvalue time 0
+            CooldownMinutesToSuccessRevote: 10
+            VoteFailText: '&AVote failed! Try again the next time night comes around.'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 15
+            MinimumVotes: 1
+            PercentToSucceed: 0
+            IgnoreUnvotedPlayers: true
+            IsConsoleCommand: false
+            LastSuccessfulVote: 0
+            LastFailedVote: 0
+        rain:
+            Description: 'Set weather to rain'
+            ArgumentCount: 0
+            InsufficientArgumentsError: ''
+            VoteStartText: '&A[%0] has started a vote to set the weather to rain! type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CWeather has been set to rain too recently!'
+            VoteSuccessText: '&AVote succeeded! It is now rainy.'
+            VoteSuccessCommandDelaySeconds: 0
+            VoteSuccessCommands:
+            - vote setvalue rain
+            CooldownMinutesToSuccessRevote: 5
+            VoteFailText: '&AVote failed! Try again next time.'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 10
+            MinimumVotes: 1
+            PercentToSucceed: 60
+            IgnoreUnvotedPlayers: true
+            IsConsoleCommand: false
+            LastSuccessfulVote: 0
+            LastFailedVote: 0
+        sun:
+            Description: 'Set weather to sunny'
+            ArgumentCount: 0
+            InsufficientArgumentsError: ''
+            VoteStartText: '&A[%0] has started a vote to set the weather to sunny! type &6/vote yes &Aor &6/vote no &Ato vote'
+            TimeoutSeconds: 60
+            VoteOnCooldownText: '&CWeather has been set to sunny too recently!'
+            VoteSuccessText: '&AVote succeeded! It is now sunny.'
+            VoteSuccessCommandDelaySeconds: 0
+            VoteSuccessCommands:
+            - vote setvalue sun
+            CooldownMinutesToSuccessRevote: 5
+            VoteFailText: '&AVote failed! Try again next time.'
+            VoteFailCommandDelaySeconds: 0
+            VoteFailCommands: []
+            CooldownMinutesToFailRevote: 10
+            MinimumVotes: 1
+            PercentToSucceed: 0
+            IgnoreUnvotedPlayers: true
+            IsConsoleCommand: false
+            LastSuccessfulVote: 0
+            LastFailedVote: 0

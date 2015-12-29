@@ -1,0 +1,29 @@
+lastAccountName: sagaross
+timestamps:
+  login: 1431834643880
+  lastteleport: 1431838307725
+  logout: 1431842127672
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 730.5705686184075
+  y: 71.0
+  z: 288.73060269790943
+  yaw: 351.8911
+  pitch: 13.049819
+afk: false
+homes:
+  home:
+    world: world
+    x: 718.5
+    y: 63.0
+    z: 374.5
+    yaw: 267.1435
+    pitch: 16.199938
+logoutlocation:
+  world: world
+  x: 727.6559504683862
+  y: 70.0
+  z: 290.4252002313382
+  yaw: 79.771484
+  pitch: 18.749853

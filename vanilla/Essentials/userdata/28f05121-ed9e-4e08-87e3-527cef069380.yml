@@ -1,0 +1,27 @@
+lastAccountName: chloemorgen
+timestamps:
+  login: 1442246626456
+  logout: 1442246633508
+ipAddress: 86.145.2.90
+lastlocation:
+  world: world
+  x: 322.5
+  y: 81.0
+  z: 306.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: world
+  x: 374.8988301078954
+  y: 59.0
+  z: 342.0692275463311
+  yaw: -10.808594
+  pitch: -23.39998
+homes:
+  home:
+    world: world
+    x: 374.69369066906063
+    y: 59.0
+    z: 341.6632341189403
+    yaw: -343.82666
+    pitch: 47.40005

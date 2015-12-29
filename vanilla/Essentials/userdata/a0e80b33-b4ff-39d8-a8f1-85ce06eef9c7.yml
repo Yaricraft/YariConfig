@@ -1,0 +1,21 @@
+lastAccountName: TheBronzeMine
+timestamps:
+  login: 1432027741738
+  logout: 1432028079516
+  kits:
+    tools: 1431768185055
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 193.70220757991942
+  y: 81.0
+  z: 180.4878249597271
+  yaw: -89.70117
+  pitch: -6.749998
+logoutlocation:
+  world: world
+  x: 321.3549508850422
+  y: 109.0
+  z: 138.12502596920953
+  yaw: 333.45053
+  pitch: -14.999996

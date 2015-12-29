@@ -1,0 +1,29 @@
+lastAccountName: afanofjapan
+timestamps:
+  login: 1430792634287
+  logout: 1430792745544
+  lastteleport: 1429223943943
+ipAddress: 70.97.219.180
+lastlocation:
+  world: world
+  x: 437.06088756225927
+  y: 20.0
+  z: 30.2231429896412
+  yaw: 243.74973
+  pitch: 38.85
+logoutlocation:
+  world: world
+  x: 318.33465066905666
+  y: 64.0
+  z: 1082.3801415624218
+  yaw: 4.9569206
+  pitch: 13.650026
+homes:
+  home:
+    world: world
+    x: 320.5040546081926
+    y: 64.0
+    z: 1079.495953444234
+    yaw: 302.25696
+    pitch: 14.250031
+afk: false

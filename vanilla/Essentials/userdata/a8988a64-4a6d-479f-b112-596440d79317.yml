@@ -1,0 +1,47 @@
+lastAccountName: karl4742
+timestamps:
+  login: 1451343826330
+  lastteleport: 1451344815101
+  kits:
+    tools: 1441474787193
+  logout: 1451345051043
+ipAddress: 71.236.50.62
+lastlocation:
+  world: world
+  x: 854.3075006145393
+  y: 254.0
+  z: 1042.1214695648353
+  yaw: -121.818726
+  pitch: 42.844963
+homes:
+  home:
+    world: world
+    x: 635.7781971484892
+    y: 63.0
+    z: 1415.3594957302482
+    yaw: -123.93262
+    pitch: 38.494125
+  roof:
+    world: world
+    x: 854.6061424150024
+    y: 254.0
+    z: 1040.5020222309477
+    yaw: -270.31866
+    pitch: 16.59496
+  zombie:
+    world: world
+    x: 201.30000001192093
+    y: 16.0
+    z: -178.6630746249529
+    yaw: 310.14795
+    pitch: 3.08806
+afk: false
+logoutlocation:
+  world: world
+  x: 635.888488117033
+  y: 65.0
+  z: 1414.1051244908556
+  yaw: -286.6826
+  pitch: 59.194145
+mail:
+- §6[§ryariplus§6] §rIf ee did something bad just let me know, he is not an admin per se.

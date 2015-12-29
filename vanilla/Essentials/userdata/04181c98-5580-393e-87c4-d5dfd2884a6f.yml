@@ -1,0 +1,28 @@
+lastAccountName: The_Diamond
+timestamps:
+  login: 1436216164120
+  lastteleport: 1436216386901
+  logout: 1436216585895
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 321.48255242612805
+  y: 81.0
+  z: 302.5613317767284
+  yaw: 324.14108
+  pitch: -0.97513247
+homes:
+  home:
+    world: world
+    x: -209.70567084641883
+    y: 53.0
+    z: 430.95688034854817
+    yaw: -341.23718
+    pitch: 17.68875
+logoutlocation:
+  world: world
+  x: -487.08562456980576
+  y: 62.23833892139094
+  z: 933.7726063436227
+  yaw: -155.9159
+  pitch: 24.110416

@@ -1,0 +1,30 @@
+lastAccountName: AqL
+timestamps:
+  login: 1448067865144
+  lastteleport: 1447813842197
+  kits:
+    tools: 1447809071257
+  logout: 1448067915818
+ipAddress: 73.200.6.24
+lastlocation:
+  world: world
+  x: 171.11605592696657
+  y: 71.23152379758702
+  z: 142.41796896127167
+  yaw: -256.8849
+  pitch: 14.589097
+logoutlocation:
+  world: world
+  x: 193.49150124737923
+  y: 71.0
+  z: 62.35019948182102
+  yaw: -317.79758
+  pitch: 55.697117
+homes:
+  home:
+    world: world
+    x: 190.3458770416492
+    y: 72.0
+    z: 177.69999998807907
+    yaw: 91.838806
+    pitch: 38.892788

@@ -1,0 +1,27 @@
+lastAccountName: DIOTHEKING
+timestamps:
+  login: 1420661483147
+  logout: 1420662495747
+ipAddress: 166.187.137.204
+lastlocation:
+  world: world
+  x: 316.5
+  y: 102.0
+  z: 235.5
+  yaw: 0.0
+  pitch: 0.0
+homes:
+  home:
+    world: world
+    x: 301.84326057889666
+    y: 56.0
+    z: 1014.2131582732206
+    yaw: 359.55017
+    pitch: 25.500092
+logoutlocation:
+  world: world
+  x: 301.84326057889666
+  y: 56.0
+  z: 1014.2131582732206
+  yaw: 1.3500977
+  pitch: 4.050091

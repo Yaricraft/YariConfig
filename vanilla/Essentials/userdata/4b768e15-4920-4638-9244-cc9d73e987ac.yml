@@ -1,0 +1,30 @@
+lastAccountName: z_iTzRyan_z
+timestamps:
+  login: 1441745415462
+  lastteleport: 1441745473846
+  logout: 1441745592849
+ipAddress: 151.230.252.76
+lastlocation:
+  world: world
+  x: 342.69999998807907
+  y: 71.0
+  z: 319.69507241016254
+  yaw: 133.80495
+  pitch: 82.80738
+homes:
+  home:
+    world: world
+    x: 375.04142406425046
+    y: 59.0
+    z: 342.36415222521526
+    yaw: 14.500366
+    pitch: 0.30002376
+logoutlocation:
+  world: world
+  x: 342.69999998807907
+  y: 71.0
+  z: 319.69999998807907
+  yaw: 133.50496
+  pitch: 82.80738
+jailed: true
+jail: jail

@@ -1,0 +1,20 @@
+lastAccountName: stubeans
+timestamps:
+  login: 1435357726332
+  lastteleport: 1435331349482
+  logout: 1435357738181
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 321.45704962867904
+  y: 81.5
+  z: 299.6564254831141
+  yaw: 178.96684
+  pitch: -15.314817
+logoutlocation:
+  world: world
+  x: -502.30000001192093
+  y: 70.5
+  z: 927.9352320314018
+  yaw: -70.24608
+  pitch: 21.763933

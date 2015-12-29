@@ -1,0 +1,44 @@
+lastAccountName: bwala40
+timestamps:
+  login: 1436225083816
+  lastteleport: 1436216518282
+  logout: 1436225086766
+ipAddress: 50.139.207.45
+lastlocation:
+  world: world
+  x: 321.5
+  y: 81.0
+  z: 302.5
+  yaw: 178.65045
+  pitch: -18.750006
+logoutlocation:
+  world: world
+  x: -495.01878414862944
+  y: 62.0
+  z: 943.3662045614964
+  yaw: 157.5335
+  pitch: 9.928854
+afk: false
+homes:
+  home:
+    world: world
+    x: -497.89736252772616
+    y: 63.0
+    z: 934.7787069789282
+    yaw: 108.055176
+    pitch: 18.149977
+  base:
+    world: world
+    x: -211.32643924232497
+    y: 53.0
+    z: 433.78443393178077
+    yaw: -257.85742
+    pitch: 5.3999624
+  spawner:
+    world: world
+    x: -459.6091354339561
+    y: 27.5
+    z: 480.99525761275515
+    yaw: -114.30851
+    pitch: 40.199978
+nickname: Blade_Defender

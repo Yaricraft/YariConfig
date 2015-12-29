@@ -1,0 +1,21 @@
+lastAccountName: bwala40
+timestamps:
+  login: 1449897368427
+  logout: 1449897400222
+  lastteleport: 1449542152300
+ipAddress: 24.209.47.148
+logoutlocation:
+  world: world
+  x: -516.298759698411
+  y: 100.0
+  z: 927.4028033531348
+  yaw: -216.71921
+  pitch: 90.0
+lastlocation:
+  world: world
+  x: 316.5894549654589
+  y: 81.875
+  z: 302.95608892335764
+  yaw: 75.2507
+  pitch: 40.036133
+afk: false

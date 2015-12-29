@@ -1,0 +1,10 @@
+Config:
+  enable: true
+Messages:
+  prefix: '&5[TeleportSigns] &6'
+  line: '&6+================================================+'
+  newSignSuccessful: You have successful created a new Teleportsign.
+  teleportSuccessful: You have been successful telported.
+  noPermission: You do not have permission to do that. If you think that this is a bug, you have to ask an Admin!
+  errorCreating: The sign is not correct. Please check it out and try it again.
+  successfulRemoved: You have successfully removed a Teleportsign.

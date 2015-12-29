@@ -1,0 +1,29 @@
+lastAccountName: Jim2688
+timestamps:
+  login: 1442073482779
+  lastteleport: 1442075096134
+  logout: 1442075229491
+ipAddress: 107.197.113.10
+lastlocation:
+  world: world
+  x: 321.48255242612805
+  y: 81.0
+  z: 302.5613317767284
+  yaw: 188.65045
+  pitch: -18.750006
+logoutlocation:
+  world: world
+  x: 638.9880072581105
+  y: 63.0
+  z: 1423.7983358260105
+  yaw: 302.49066
+  pitch: 26.400015
+homes:
+  home:
+    world: world
+    x: 638.5168461618513
+    y: 63.0
+    z: 1413.38652761943
+    yaw: 46.740692
+    pitch: 54.573128
+afk: false

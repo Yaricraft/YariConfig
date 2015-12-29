@@ -1,0 +1,45 @@
+lastAccountName: 7020bugsy
+timestamps:
+  login: 1449595673659
+  kits:
+    tools: 1449595745132
+  lastteleport: 1449598012641
+  logout: 1449598841742
+ipAddress: 98.253.93.170
+lastlocation:
+  world: world
+  x: 2394.6586302336586
+  y: 24.0
+  z: 2353.925000011921
+  yaw: -258.42285
+  pitch: -22.268707
+logoutlocation:
+  world: world
+  x: 321.48255242612805
+  y: 81.0
+  z: 302.5613317767284
+  yaw: 190.75043
+  pitch: -21.750013
+homes:
+  southeast:
+    world: world
+    x: 2492.558943369365
+    y: 68.0
+    z: 2492.5714211736986
+    yaw: -255.15784
+    pitch: 19.199923
+  mine:
+    world: world
+    x: 2416.300000011921
+    y: 27.0
+    z: 2321.699999988079
+    yaw: -96.12128
+    pitch: 4.799987
+  spawner:
+    world: world
+    x: 2393.065154930199
+    y: 25.0
+    z: 2357.8046319171326
+    yaw: -219.4223
+    pitch: 23.099993
+afk: false

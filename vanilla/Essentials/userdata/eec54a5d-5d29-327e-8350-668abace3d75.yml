@@ -1,0 +1,22 @@
+lastAccountName: _EliteMC
+timestamps:
+  login: 1428852441936
+  lastteleport: 1428852501624
+  kits:
+    tools: 1428852525676
+  logout: 1428852582738
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 321.5
+  y: 109.0
+  z: 175.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: world
+  x: 320.7149140724933
+  y: 109.0
+  z: 185.69991599150433
+  yaw: -350.8051
+  pitch: 15.458649

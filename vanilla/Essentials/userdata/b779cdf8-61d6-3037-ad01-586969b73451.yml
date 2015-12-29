@@ -1,0 +1,52 @@
+lastAccountName: yariplus
+timestamps:
+  login: 1438477642387
+  logout: 1438479012820
+  lastteleport: 1437800577058
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: -159.0726516269034
+  y: 66.0625
+  z: 305.7961542811654
+  yaw: 340.0509
+  pitch: -23.550003
+logoutlocation:
+  world: world
+  x: 135.53697295670136
+  y: 79.0
+  z: 177.4103091310018
+  yaw: -73.79981
+  pitch: 17.250013
+afk: false
+godmode: true
+money: '850.0'
+homes:
+  home:
+    world: world
+    x: -157.47303649690002
+    y: 66.0625
+    z: 305.36424518572085
+    yaw: -179.39955
+    pitch: 11.999979
+  iron:
+    world: world
+    x: 1735.5376514576244
+    y: 73.66294336765672
+    z: 57.92230683855553
+    yaw: 87.94342
+    pitch: -0.44998094
+  rikky:
+    world: world
+    x: 951.9581908761947
+    y: 69.0
+    z: -1022.0110913749309
+    yaw: 119.01041
+    pitch: 7.650011
+  karl4742:
+    world: world
+    x: 375.084792981199
+    y: 67.0
+    z: -2494.834684350769
+    yaw: -169.81755
+    pitch: 12.876529

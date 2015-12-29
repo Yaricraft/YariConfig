@@ -1,0 +1,28 @@
+lastAccountName: CJlishly
+timestamps:
+  login: 1451176409133
+  lastteleport: 1451177515763
+  logout: 1451177950561
+ipAddress: 68.52.248.48
+lastlocation:
+  world: world
+  x: 321.55503885545227
+  y: 81.0
+  z: 302.9430929360054
+  yaw: 359.1109
+  pitch: 23.60809
+logoutlocation:
+  world: world
+  x: 627.28131456034
+  y: 63.0
+  z: 1413.3509254397768
+  yaw: 260.0365
+  pitch: 17.026104
+homes:
+  home:
+    world: world
+    x: 639.1880452097115
+    y: 63.0
+    z: 1418.2223045864998
+    yaw: 160.61665
+    pitch: 13.405863

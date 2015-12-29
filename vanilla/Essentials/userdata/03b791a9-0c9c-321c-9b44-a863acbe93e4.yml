@@ -1,0 +1,31 @@
+lastAccountName: karl4742
+timestamps:
+  login: 1437171251273
+  logout: 1437172711809
+  lastteleport: 1437171984984
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 320.8765070088002
+  y: 109.0
+  z: 226.71880160472026
+  yaw: -212.61182
+  pitch: 17.25368
+logoutlocation:
+  world: world
+  x: 371.0104320286455
+  y: 67.0
+  z: -2493.170729849369
+  yaw: -282.03247
+  pitch: 13.262011
+homes:
+  home:
+    world: world
+    x: 373.6067561284396
+    y: 67.0
+    z: -2497.0322875416177
+    yaw: -340.98608
+    pitch: 5.5860305
+money: '649.0'
+afk: false
+nickname: karl4742

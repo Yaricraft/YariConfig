@@ -1,0 +1,66 @@
+lastAccountName: yariplus
+timestamps:
+  login: 1451351071359
+  lastteleport: 1451333205968
+  logout: 1451334022651
+ipAddress: 71.121.172.68
+lastlocation:
+  world: world
+  x: 251.28080715061773
+  y: 64.0
+  z: 372.80412961447126
+  yaw: -187.10002
+  pitch: 57.30001
+homes:
+  house:
+    world: world
+    x: -157.7352573982891
+    y: 66.0
+    z: 302.36295354143493
+    yaw: 177.60074
+    pitch: 4.1999764
+  house2:
+    world: world
+    x: -160.728172909416
+    y: 66.0
+    z: 302.5615703454241
+    yaw: 177.60074
+    pitch: 4.1999764
+  penis:
+    world: world
+    x: 1813.9330794766065
+    y: 81.27244694541459
+    z: -1.2146116444122916
+    yaw: -131.21713
+    pitch: 15.600002
+  cake:
+    world: world
+    x: 321.51495021107104
+    y: 111.5
+    z: 178.52008861717124
+    yaw: 271.72278
+    pitch: 90.0
+  bwalanew:
+    world: world
+    x: -497.125451228552
+    y: 66.5
+    z: 926.4203144319379
+    yaw: 94.06606
+    pitch: 44.632465
+  karl:
+    world: world
+    x: 854.5
+    y: 254.0
+    z: 1089.5
+    yaw: -1.3770132
+    pitch: 47.55002
+afk: false
+logoutlocation:
+  world: world
+  x: -142.25939399244433
+  y: 64.0
+  z: 300.07744529153774
+  yaw: -289.84503
+  pitch: 15.449993
+godmode: true
+nickname: §9Yarikins

@@ -1,0 +1,21 @@
+lastAccountName: coresystem
+timestamps:
+  login: 1424548173168
+  lastteleport: 1424543981045
+  logout: 1424548174118
+ipAddress: 95.222.30.249
+lastlocation:
+  world: world
+  x: 323.0168086320366
+  y: 97.5
+  z: 244.9972353090948
+  yaw: 11.250002
+  pitch: 13.799997
+afk: false
+logoutlocation:
+  world: world
+  x: -219.0942609923242
+  y: 53.0
+  z: 433.5785571266227
+  yaw: 201.34949
+  pitch: 11.442995

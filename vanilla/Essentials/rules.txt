@@ -1,0 +1,9 @@
+&eHello! &dWelcome to &lYaricraft!&r
+We are a friendly server with lax rules and no ranks.
+For a the full set of 'rules' go to:
+&9http://goo.gl/SGuiMG&r
+
+&nBasics:&r
+&c[1]&r Don't be rude.
+&c[2]&r Everyone is equal.
+&c[3]&r Ask &eyariplus&r if you need anything.

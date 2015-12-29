@@ -1,0 +1,44 @@
+lastAccountName: ElectroStrikePvP
+timestamps:
+  login: 1448600247002
+  lastteleport: 1448498757681
+  logout: 1448600268403
+  kits:
+    tools: 1447810007385
+ipAddress: 72.81.134.201
+lastlocation:
+  world: world
+  x: 187.69999998807907
+  y: 74.0
+  z: 170.17561291076882
+  yaw: 266.77496
+  pitch: 25.350012
+logoutlocation:
+  world: world
+  x: 273.5392836542631
+  y: 65.0
+  z: 619.3287621678634
+  yaw: -144.75853
+  pitch: 9.659466
+homes:
+  home:
+    world: world
+    x: 188.8805352908278
+    y: 72.5
+    z: 180.3210171677816
+    yaw: 219.82495
+    pitch: 33.45002
+  molebase:
+    world: world
+    x: 212.41918912081584
+    y: 64.0
+    z: 107.04220780618054
+    yaw: 219.16565
+    pitch: 8.034754
+  redstone:
+    world: world
+    x: 75.28491384223031
+    y: 64.0
+    z: 38.85265274622303
+    yaw: 212.72353
+    pitch: 12.467361

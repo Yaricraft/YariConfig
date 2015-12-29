@@ -1,0 +1,30 @@
+lastAccountName: Ironaxe3
+timestamps:
+  login: 1440925724997
+  logout: 1440928714741
+  lastteleport: 1440926790091
+ipAddress: 2.29.121.89
+logoutlocation:
+  world: world
+  x: 1676.5245705452385
+  y: 100.85204908823233
+  z: -2.6210013330613613
+  yaw: 22.230469
+  pitch: 90.0
+afk: false
+nickname: §bDerp
+lastlocation:
+  world: world
+  x: 2204.1425717363436
+  y: 74.327938753998
+  z: 2327.8337013322775
+  yaw: -233.39368
+  pitch: 28.05016
+homes:
+  home:
+    world: world
+    x: 1680.7565608782982
+    y: 83.0
+    z: 28.621579740316868
+    yaw: 129.78227
+    pitch: 40.650005

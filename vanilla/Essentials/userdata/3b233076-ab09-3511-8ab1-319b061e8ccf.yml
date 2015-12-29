@@ -1,0 +1,37 @@
+lastAccountName: Ironaxe3
+timestamps:
+  login: 1435447173441
+  lastteleport: 1435447446508
+  logout: 1435449687530
+ipAddress: 127.0.0.1
+lastlocation:
+  world: world
+  x: 339.16287035762576
+  y: 90.58410614343695
+  z: 311.08283548294014
+  yaw: -70.807144
+  pitch: 25.949984
+homes:
+  home:
+    world: world
+    x: 1894.768896980275
+    y: 108.17572940726795
+    z: -44.141432266508545
+    yaw: 300.0442
+    pitch: 90.0
+  two:
+    world: world
+    x: 1700.0669088599977
+    y: 81.11163305637575
+    z: 13.83711374281265
+    yaw: -179.20815
+    pitch: 12.600026
+nickname: §aI§br§co§dn
+logoutlocation:
+  world: world
+  x: 1700.3459028861344
+  y: 79.0
+  z: 24.037089037556164
+  yaw: 179.58342
+  pitch: 25.50001
+afk: false
